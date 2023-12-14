@@ -1,0 +1,44 @@
+﻿
+#include <SDKDDKVer.h>
+#include <windows.h>
+#include "resource_exe.h"
+#include "app_info.h"
+
+
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(65001)
+
+100	ICON	"icon\\language.ico"
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION VER_MAJOR,VER_MINOR,VER_SUB,VER_BUILD
+ PRODUCTVERSION VER_MAJOR,VER_MINOR,VER_SUB,VER_BUILD
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x0L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041904b0"
+        BEGIN
+            VALUE "CompanyName", "CC"
+            VALUE "FileDescription", FILE_PRODUCT
+            VALUE "FileVersion", VER_TEXT
+            VALUE "InternalName", FILE_NAME
+            VALUE "LegalCopyright", FILE_COPYRIGHT
+            VALUE "OriginalFilename", FILE_NAME
+            VALUE "ProductName", FILE_DESC
+            VALUE "ProductVersion", VER_TEXT
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x419, 1200
+    END
+END
