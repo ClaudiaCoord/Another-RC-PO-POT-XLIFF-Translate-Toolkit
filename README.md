@@ -36,7 +36,6 @@ The main disadvantages that prevent you from using the original Translate Toolki
 2. Does not replace the '&' sign in the 'xliff' format with the '\&amp;' html tag. Since the 'xliff' format is a subset of the 'XML' format, this results in an error. No further processing of such a file is possible.
 </details>
 
-Also, we must take into account that these utilities in the original Translate Toolkit package are written in `python`. This affects processing speed. With a large volume of files, more than 100, the conversion time becomes noticeable.
+Also, we must take into account that these utilities in the original `Translate Toolkit` package are written in `python`. This affects processing speed. With a large volume of files, more than 100, the conversion time becomes noticeable.
 
-All utilities included in the `Another Translate Toolkit` package are written in C++, so the processing speed of language files is close to maximum. Compiled packages are available for Windows x64 and x86 platforms.
-
+All utilities included in the `Another Translate Toolkit` package are written in C++, so the processing speed of language files is close to maximum. Compiled packages are available for Windows [x64](https://github.com/ClaudiaCoord/Another-RC-PO-POT-XLIFF-Translate-Toolkit/releases/download/1.0.0/AnotherTranslateToolkitx64.msi) and [x86](https://github.com/ClaudiaCoord/Another-RC-PO-POT-XLIFF-Translate-Toolkit/releases/download/1.0.0/AnotherTranslateToolkitx86.msi) platforms.
