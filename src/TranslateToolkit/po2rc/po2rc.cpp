@@ -138,25 +138,9 @@
         }
         void add_dictionary(std::wstring& orig, std::wstring& trans) {
 
-            if (config_->is_normalize && (trans.length() > 1)) {
-                /* “ texts ” */
-                size_t pos{ 0 };
-                std::wstring& t(trans);
-                while (pos != std::wstring::npos) {
-                    pos = t.find_first_of(separators::text, pos);
-                    if (pos == std::wstring::npos) break;
-                    t = t.replace(pos, 1, L"“");
-
-                    pos = t.find_first_of(separators::text, (pos + 1));
-                    if (pos == std::wstring::npos) break;
-                    t = t.replace(pos++, 1, L"”");
-                }
-                /* "& texts */
-                if (t.at(0) == separators::command[0] && t.starts_with(separators::command))
-                    t = t.replace(0, 2, L"&");
-
-                dictionary_.push_back(std::make_pair(orig, t));
-            } else dictionary_.push_back(std::make_pair(orig, trans));
+            if (config_->is_normalize && (trans.length() > 1))
+                dictionary_.push_back(std::make_pair(orig, utils::po_normalize(trans)));
+            else dictionary_.push_back(std::make_pair(orig, trans));
         }
     };
 

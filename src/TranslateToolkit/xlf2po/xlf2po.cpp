@@ -18,12 +18,14 @@
 
         bool is_pot;
         bool is_reverse;
+        bool is_normalize;
 
         config(argparse::ArgumentParser& args) {
 
             if (args.exists(L"x")) path_xlf = std::filesystem::path(args.get<std::wstring>(L"x"));
             is_pot = args.exists(L"p");
             is_reverse = args.exists(L"r");
+            is_normalize = args.exists(L"n");
 
             std::wstring s = args.get<std::wstring>(L"o");
             if (s.empty()) {
@@ -80,9 +82,12 @@
 
                     if (i->name()._Equal(L"trans-unit")) {
                         xml::Xml& a = *static_cast<xml::Xml*>(&*i);
-                        if (config_->is_pot)
-                            write_format((config_->is_reverse ? a[L"target"].text() : a[L"source"].text()), L"");
-                        else write_format(a[L"source"].text(), a[L"target"].text());
+                        if (config_->is_pot) {
+                            if (config_->is_reverse)
+                                write_format((config_->is_normalize ? utils::po_normalize(a[L"target"].text()) : a[L"target"].text()), L"");
+                            else write_format(a[L"source"].text(), L"");
+                        }
+                        else write_format(a[L"source"].text(), (config_->is_normalize ? utils::po_normalize(a[L"target"].text()) : a[L"target"].text()));
                     }
                 }
 
@@ -137,10 +142,14 @@ int wmain(int argc, const wchar_t* argv[]) {
             args.add_argument()
                 .names({ L"-p", L"--pot" })
                 .description(L"output POT file, 'msgstr' empty");
-                
+
             args.add_argument()
                 .names({ L"-r", L"--reverse" })
                 .description(L"Change primary language to output POT file, required -p option");
+
+            args.add_argument()
+                .names({ L"-n", L"--normalize" })
+                .description(L"normalize translated text");
 
             args.add_argument()
                 .names({ L"-o", L"--output" })
@@ -177,7 +186,7 @@ int wmain(int argc, const wchar_t* argv[]) {
         cw.print((std::wstringstream()
             << L"\n\t* Process file: " << cnf->path_xlf.filename().wstring()
             << L", out: " << cnf->path_out.filename().wstring()
-            << L"\n")
+            << L", normalize: " << std::boolalpha << cnf->is_normalize << L"\n")
         );
         cnf->begin();
         std::unique_ptr<writer> ptr = std::make_unique<writer>(cnf);

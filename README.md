@@ -98,6 +98,7 @@ Options:
     -x, --xliffinput       XLIFF input file, full path (Required)  
     -p, --pot              output POT file, 'msgstr' empty  
     -r, --reverse          Change primary language to output POT file, required -p option  
+    -n, --normalize        normalize translated text
     -o, --output           PO/POT output file, full path, or use -d option  
     -d, --directory        PO/POT output directory, full path, or use -o option  
     -h, --help             this help page..  

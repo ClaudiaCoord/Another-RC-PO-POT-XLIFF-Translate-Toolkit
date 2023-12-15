@@ -189,7 +189,7 @@ typedef std::shared_ptr<config> CONFIG;
             ss << L"#. extracted from " << p.filename().wstring().c_str() << L"\n"
                 L"msgid \"\"\n"
                 L"msgstr \"\"\n"
-                L"\"Project-Id-Version: 1212\\n\"\n"
+                L"\"Project-Id-Version: 9175\\n\"\n"
                 L"\"Report-Msgid-Bugs-To: \\n\"\n"
                 L"\"POT-Creation-Date: 2020-12-12 12:12+0000\\n\"\n"
                 L"\"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\\n\"\n"
@@ -208,5 +208,31 @@ typedef std::shared_ptr<config> CONFIG;
         }
         static std::wstring po_format(const std::wstring& s, const std::wstring& b) {
             return (std::wstringstream() << L"\n\nmsgid \"" << s.c_str() << L"\"\nmsgstr \"" << b.c_str() << "\"").str();
+        }
+        static std::wstring& po_normalize(std::wstring& s) {
+            try {
+                if (s.length() < 2) return s;
+
+                /* “ texts ” */
+                size_t pos{ 0 };
+                std::wstring& t(s);
+                while (pos != std::wstring::npos) {
+                    pos = t.find_first_of(separators::text, pos);
+                    if (pos == std::wstring::npos) break;
+                    t = t.replace(pos, 1, L"“");
+
+                    pos = t.find_first_of(separators::text, (pos + 1));
+                    if (pos == std::wstring::npos) break;
+                    t = t.replace(pos++, 1, L"”");
+                }
+                /* "& texts */
+                if (t.at(0) == separators::command[0] && t.starts_with(separators::command))
+                    t = t.replace(0, 2, L"&");
+                return t;
+            }
+            catch (...) {
+                cw.print_exception(std::current_exception(), __FUNCTIONW__);
+            }
+            return s;
         }
     };

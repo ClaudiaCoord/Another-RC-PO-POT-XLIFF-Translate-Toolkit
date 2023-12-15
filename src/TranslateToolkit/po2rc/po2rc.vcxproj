@@ -22,7 +22,7 @@
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{A40EEE22-29D5-4E78-B4FA-8320A0AFFCDC}</ProjectGuid>
-    <RootNamespace>MIDIMTRESConverter</RootNamespace>
+    <RootNamespace>TranslateToolkit</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
