@@ -1,5 +1,7 @@
 # Another RC/PO/POT/XLIFF Translate Toolkit
 
+### Project philosophy
+
 The reason why these utilities were written is simple; I could not find working analogues.
 Of course, there is the `Translate Toolkit`  
 from © `Translate House`, but from version to version its performance is steadily decreasing...
