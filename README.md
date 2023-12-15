@@ -1,3 +1,5 @@
+[![MSBuild](https://github.com/ClaudiaCoord/Another-RC-PO-POT-XLIFF-Translate-Toolkit/actions/workflows/msbuild-release.yml/badge.svg)](https://github.com/ClaudiaCoord/Another-RC-PO-POT-XLIFF-Translate-Toolkit/actions/workflows/msbuild-release.yml)
+
 # Management RC/PO/POT/XLIFF languages files - Translate Toolkit
 
 ### Project philosophy
