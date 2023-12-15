@@ -29,7 +29,7 @@
 
                 path_out = std::filesystem::path(s);
                 if (!std::filesystem::is_directory(path_out)) {
-                    cw.print((std::wstringstream() << L"\n! Output path is not directory" << path_out.wstring() << L"\n"));
+                    cw.print((std::wstringstream() << L"\n! Output path is not directory: " << path_out.wstring() << L"\n"));
                     return;
                 }
 

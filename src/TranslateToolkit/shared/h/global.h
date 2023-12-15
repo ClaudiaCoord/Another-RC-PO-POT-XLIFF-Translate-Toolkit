@@ -43,8 +43,9 @@ typedef std::shared_ptr<config> CONFIG;
 
     class separators {
     public:
-        static constexpr wchar_t text[] = L"\"";
+        static constexpr wchar_t command[] = L"& ";
         static constexpr wchar_t valid[] = L" \t";
+        static constexpr wchar_t text[] = L"\"";
         static constexpr wchar_t end[] = L"\r\n";
         static constexpr wchar_t all[] = L" \t\v\f\r\n";
     };

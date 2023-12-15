@@ -11,6 +11,7 @@
 
     class config : public info::configinfo {
     public:
+
         std::wstring lang_tmpl{};
         std::wstring lang_out{};
         std::wstring lang_id{};
@@ -19,6 +20,8 @@
         std::filesystem::path path_po{};
         std::filesystem::path path_tmpl{};
         std::filesystem::path path_exclude{};
+
+        bool is_normalize;
 
         config(argparse::ArgumentParser& args) {
 
@@ -30,6 +33,8 @@
             if (args.exists(L"t")) path_tmpl = std::filesystem::path(args.get<std::wstring>(L"t"));
             if (args.exists(L"p")) path_po = std::filesystem::path(args.get<std::wstring>(L"p"));
 
+            is_normalize = args.exists(L"n");
+
             std::wstring s = args.get<std::wstring>(L"o");
             if (s.empty()) {
                 s = args.get<std::wstring>(L"d");
@@ -37,7 +42,7 @@
 
                 path_out = std::filesystem::path(s);
                 if (!std::filesystem::is_directory(path_out)) {
-                    cw.print((std::wstringstream() << L"\n! Output path is not directory" << path_out.wstring() << L"\n"));
+                    cw.print((std::wstringstream() << L"\n! Output path is not directory: " << path_out.wstring() << L"\n"));
                     return;
                 }
 
@@ -132,7 +137,26 @@
             return dictionary_.empty();
         }
         void add_dictionary(std::wstring& orig, std::wstring& trans) {
-            dictionary_.push_back(std::make_pair(orig, trans));
+
+            if (config_->is_normalize && (trans.length() > 1)) {
+                /* “ texts ” */
+                size_t pos{ 0 };
+                std::wstring& t(trans);
+                while (pos != std::wstring::npos) {
+                    pos = t.find_first_of(separators::text, pos);
+                    if (pos == std::wstring::npos) break;
+                    t = t.replace(pos, 1, L"“");
+
+                    pos = t.find_first_of(separators::text, (pos + 1));
+                    if (pos == std::wstring::npos) break;
+                    t = t.replace(pos++, 1, L"”");
+                }
+                /* "& texts */
+                if (t.at(0) == separators::command[0] && t.starts_with(separators::command))
+                    t = t.replace(0, 2, L"&");
+
+                dictionary_.push_back(std::make_pair(orig, t));
+            } else dictionary_.push_back(std::make_pair(orig, trans));
         }
     };
 
@@ -167,9 +191,12 @@
                         while (std::getline(fpot, line)) {
                             if (line.empty() || (line.at(0) != L'm')) continue;
 
-                            size_t z = line.find_first_of(L'"');
-                            if (z == std::wstring::npos) continue;
-                            std::wstring msgstr = line.substr((z + 1), (line.length() - z - 2));
+                            size_t b = line.find_first_of(L'"');
+                            if (b == std::wstring::npos) continue;
+                            size_t e = line.find_last_of(L'"');
+                            if (e == std::wstring::npos) continue;
+
+                            std::wstring msgstr = line.substr((b + 1), (e - b - 1));
                             if (msgstr.empty()) continue;
 
                             if (line.starts_with(L"msgid")) {
@@ -208,9 +235,9 @@
                         if (line.empty()) continue;
                         const auto c = line.at(0);
                         if ((c == 0) || (c == L'#') || (c == L'/') || (c == L'\r') || (c == L'\n') || (c == 65279))
-                            write(line);
+                            write(line, true);
                         else
-                            write(parser_.parse(line));
+                            write(parser_.parse(line), true);
                     }
                 }
 
@@ -219,8 +246,9 @@
             }
             return false;
         }
-        void write(const std::wstring s) {
+        void write(const std::wstring s, bool crlf = false) {
             stream_out_ << s;
+            if (crlf) stream_out_ << L"\n";
         }
         void write(const std::wstringstream s) {
             stream_out_ << s.str();
@@ -262,6 +290,10 @@ int wmain(int argc, const wchar_t* argv[]) {
                 .names({ L"-i", L"--langid" })
                 .description(L"Output language Microsoft ID: LANG_*")
                 .required(true);
+
+            args.add_argument()
+                .names({ L"-n", L"--normalize" })
+                .description(L"normalize translated text");
 
             args.add_argument()
                 .names({ L"-p", L"--poinput" })
@@ -310,7 +342,8 @@ int wmain(int argc, const wchar_t* argv[]) {
         cw.print((std::wstringstream()
             << L"\n\t* Process file: " << cnf->path_po.filename().wstring()
             << L", template: " << cnf->lang_tmpl
-            << L", to language: " << cnf->lang_out << L"\n")
+            << L", to language: " << cnf->lang_out
+            << L", normalize: " << std::boolalpha << cnf->is_normalize << L"\n")
         );
         if (!cnf->path_exclude.empty())
             cw.print((std::wstringstream() << L"\t* Usiing exclude file: " << cnf->path_exclude.wstring() << L"\n"));
