@@ -1,7 +1,8 @@
 # Another RC/PO/POT/XLIFF Translate Toolkit
 
 The reason why these utilities were written is simple; I could not find working analogues.
-Of course, there is the `Translate Toolkit` from © `Translate House`, but from version to version its performance is steadily decreasing...
+Of course, there is the `Translate Toolkit`  
+from © `Translate House`, but from version to version its performance is steadily decreasing...
 
 <details>
 We used original "Translate Toolkit" package before. In addition to the package itself, for full functionality you must also install the latest version of "GetText" from "GNU". From it you need the merge utility, which tidies up the multi-line output from the 'rc2po' and 'po2rc' utilities. This format complies with the standards, but many online resources related to translation into different languages cannot work with it correctly. This is especially evident in the Chinese or Japanese languages: lines are cut off, syntax format errors appear related to unclosed quotes and many other similar faults.
