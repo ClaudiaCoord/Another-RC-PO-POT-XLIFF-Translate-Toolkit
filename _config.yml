@@ -5,4 +5,5 @@ title: [Another Translate Toolkit]
 description: [Management RC/PO/POT/XLIFF languages files]
 show_downloads: "true"
 github:
-  another_url: https://github.com/ClaudiaCoord/Another-RC-PO-POT-XLIFF-Translate-Toolkit/releases/download/1.0.0/AnotherTranslateToolkitx64.msi
+  zip_url: https://github.com/ClaudiaCoord/Another-RC-PO-POT-XLIFF-Translate-Toolkit/releases/download/1.0.0/AnotherTranslateToolkitx64.msi
+  tar_url: https://github.com/ClaudiaCoord/Another-RC-PO-POT-XLIFF-Translate-Toolkit/releases/download/1.0.0/AnotherTranslateToolkitx86.msi
