@@ -1,4 +1,4 @@
-# Another RC/PO/POT/XLIFF Translate Toolkit
+# Management RC/PO/POT/XLIFF languages files - Translate Toolkit
 
 ### Project philosophy
 
