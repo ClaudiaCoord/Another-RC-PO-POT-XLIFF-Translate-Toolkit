@@ -10,6 +10,7 @@ We used original "Translate Toolkit" package before. In addition to the package 
 The main disadvantages that prevent you from using the original Translate Toolkit:
 
 <details>
+  
 "po2rc" utility:
   
 1. Does not understand menu tags unless they are inside the 'POPUP' tag.
@@ -27,12 +28,12 @@ The main disadvantages that prevent you from using the original Translate Toolki
 4. Adds empty lines consisting of one space to the translation.
 4. It does not have settings that affect multi-line output of values; it is impossible to change this behavior.
 5. Does not have settings to prevent spam recording of line identifiers, thereby increasing the file size several times. This makes viewing and analyzing the source file very difficult.
-6. When using UTF-8 and missing the 'BOM' header at the beginning of the file, it produces the error: "error line:1 symbol:2".
+6. When using UTF-8 and missing the 'UTF-8 BOM' header at the beginning of the file, it produces the error: "error line:1 symbol:2".
 
 "xliff2po" utility:
 
 1. Adds the construction '#, fussy' to each 'msgid + msgtext' pair; other utilities from the same package do not understand this construction, which leads to a processing error. There is no way to disable this behavior.
-2. Does not replace the '&' sign in the 'xliff' format with the '&amp;' html tag. Since the 'xliff' format is a subset of the 'XML' format, this results in an error. No further processing of such a file is possible.
+2. Does not replace the '&' sign in the 'xliff' format with the '\&amp;' html tag. Since the 'xliff' format is a subset of the 'XML' format, this results in an error. No further processing of such a file is possible.
 </details>
 
 Also, we must take into account that these utilities in the original Translate Toolkit package are written in `python`. This affects processing speed. With a large volume of files, more than 100, the conversion time becomes noticeable.
