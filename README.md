@@ -1,4 +1,6 @@
-[![MSBuild](https://github.com/ClaudiaCoord/Another-RC-PO-POT-XLIFF-Translate-Toolkit/actions/workflows/msbuild-release.yml/badge.svg)](https://github.com/ClaudiaCoord/Another-RC-PO-POT-XLIFF-Translate-Toolkit/actions/workflows/msbuild-release.yml)
+[![MSBuild](https://github.com/ClaudiaCoord/Another-RC-PO-POT-XLIFF-Translate-Toolkit/actions/workflows/msbuild-release.yml/badge.svg)](https://github.com/ClaudiaCoord/Another-RC-PO-POT-XLIFF-Translate-Toolkit/actions/workflows/msbuild-release.yml) 
+[![Download x64](https://img.shields.io/badge/Download-x64-brightgreen.svg?style=flat-square)](https://github.com/ClaudiaCoord/Another-RC-PO-POT-XLIFF-Translate-Toolkit/releases/download/1.0.0/AnotherTranslateToolkitx64.msi) 
+[![Download x86](https://img.shields.io/badge/Download-x86-brightgreen.svg?style=flat-square)](https://github.com/ClaudiaCoord/Another-RC-PO-POT-XLIFF-Translate-Toolkit/releases/download/1.0.0/AnotherTranslateToolkitx86.msi) 
 
 # Management RC/PO/POT/XLIFF languages files - Translate Toolkit
 
@@ -13,8 +15,7 @@ We used original "Translate Toolkit" package before. In addition to the package 
 </details>
 
   
-The main disadvantages that prevent you from using the original Translate Toolkit:
-
+The main disadvantages that prevent you from using the original Translate Toolkit:  
 <details>
   
 "po2rc" utility:  
@@ -41,6 +42,7 @@ The main disadvantages that prevent you from using the original Translate Toolki
 1. Adds the construction '#, fussy' to each 'msgid + msgtext' pair; other utilities from the same package do not understand this construction, which leads to a processing error. There is no way to disable this behavior.  
 2. Does not replace the '&' sign in the 'xliff' format with the '\&amp;' html tag. Since the 'xliff' format is a subset of the 'XML' format, this results in an error. No further processing of such a file is possible.  
 </details>
+
 
 ### Perfomance
 
