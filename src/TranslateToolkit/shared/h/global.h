@@ -27,10 +27,17 @@
 #include <chrono>
 #include <format>
 #include <set>
+#include <cwchar>
+#include <cwctype>
+#include <type_traits>
 
 #include "argparse.h"
-#include "configinfo.h"
 #include "XmlException.h"
+#if !defined(_NO_CONFIGINFO)
+    #include "configinfo.h"
+#endif
+
+#define FLAG_EXPORT
 
 using namespace std::string_view_literals;
 class config;
@@ -130,7 +137,14 @@ typedef std::shared_ptr<config> CONFIG;
 
             } catch (...) {}
         }
-    } cw{};
+    };
+
+#if !defined(_NO_CONFIGINFO)
+    console_writer cw{};
+#else
+    extern console_writer cw;
+#endif
+
 
     class utils {
     public:

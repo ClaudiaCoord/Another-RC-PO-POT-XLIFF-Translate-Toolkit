@@ -38,4 +38,7 @@
       <Filter>Файлы ресурсов</Filter>
     </ResourceCompile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\..\EasyControl-Mackie-src\src\.editorconfig" />
+  </ItemGroup>
 </Project>

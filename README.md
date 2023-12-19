@@ -126,3 +126,29 @@ Options:
 	lang2id.exe de-DE  
 
 ```
+
+#### po2spell.exe:  
+```
+Spelling Checker PO/POT files
+
+Usage: po2spell.exe [options...]
+Options:
+    -s, --list             Print list of supported languages
+    -l, --lang             Select a test language from the supported languages, Microsoft ID: en-US, de-DE..
+    -c, --count            Suggestions output count: 0-1000
+    -a, --auto             Spell check, automatic text update, default option: disabled.
+    -p, --poinput          PO/POT input file, full path (Required)
+    -o, --pooutput         PO/POT output file, full path, optionals
+    -r, --reverse          Change the primary language for the POT input file
+    -e, --exclude          By default, exclude file it is in the directory of the executable, and name 'po2spell.<Microsoft language ID>.exclude'
+    -h, --help             this help page..       
+
+	po2spell.exe -s
+		or:
+	po2spell.exe -l en-US -c 10
+		-p x:\path\to\file\resource.po
+		or:
+	po2spell.exe -l en-US -a
+		-p x:\path\to\file\resource.po
+
+```

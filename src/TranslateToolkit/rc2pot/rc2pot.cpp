@@ -12,7 +12,7 @@
     class config : public info::configinfo {
     public:
 
-        std::filesystem::path path_out{};
+        std::filesystem::path path_spell{};
         std::filesystem::path path_dup{};
         std::filesystem::path path_rc{};
         std::filesystem::path path_exclude{};
@@ -27,27 +27,27 @@
                 s = args.get<std::wstring>(L"d");
                 if (s.empty()) return;
 
-                path_out = std::filesystem::path(s);
-                if (!std::filesystem::is_directory(path_out)) {
-                    cw.print((std::wstringstream() << L"\n! Output path is not directory: " << path_out.wstring() << L"\n"));
+                path_spell = std::filesystem::path(s);
+                if (!std::filesystem::is_directory(path_spell)) {
+                    cw.print((std::wstringstream() << L"\n! Output path is not directory: " << path_spell.wstring() << L"\n"));
                     return;
                 }
 
-                path_out.append(path_rc.filename().wstring());
-                path_out.replace_extension(L".pot");
+                path_spell.append(path_rc.filename().wstring());
+                path_spell.replace_extension(L".pot");
             }
-            else path_out = std::filesystem::path(s);
+            else path_spell = std::filesystem::path(s);
 
             if (!std::filesystem::exists(path_rc)) path_rc = std::filesystem::path();
-            if (!std::filesystem::exists(path_out.root_directory())) path_out = std::filesystem::path();
+            if (!std::filesystem::exists(path_spell.root_directory())) path_spell = std::filesystem::path();
             else {
-                path_dup = std::filesystem::path(path_out);
+                path_dup = std::filesystem::path(path_spell);
                 path_dup.replace_extension(L".dup");
             }
         }
 
         const bool empty() {
-            return path_rc.empty() || path_out.empty();
+            return path_rc.empty() || path_spell.empty();
         }
     };
 
@@ -274,11 +274,13 @@
 
         HASHLIST hash_list{};
 
-        std::wofstream stream_out_{};
+        std::wofstream stream_spell_{};
         std::wofstream stream_dup_{};
         std::wifstream stream_in_{};
         parser parser_;
         CONFIG& config_;
+
+        bool is_dup_write{ false };
 
     public:
         writer(CONFIG& c) : config_(c), parser_(parser(c)) {
@@ -292,14 +294,14 @@
                 stream_in_.open(config_->path_rc.wstring(), std::ios::in | std::ios::binary);
                 if (!stream_in_.is_open()) return false;
 
-                stream_out_.open(config_->path_out.wstring(), std::ios_base::binary | std::ios_base::out | std::ios::trunc);
-                if (!stream_out_.is_open()) return false;
+                stream_spell_.open(config_->path_spell.wstring(), std::ios_base::binary | std::ios_base::out | std::ios::trunc);
+                if (!stream_spell_.is_open()) return false;
 
                 stream_dup_.open(config_->path_dup.wstring(), std::ios_base::binary | std::ios_base::out | std::ios::trunc);
                 if (!stream_dup_.is_open()) return false;
 
                 stream_in_.imbue(std::locale(".utf-8"));
-                stream_out_.imbue(std::locale(".utf-8"));
+                stream_spell_.imbue(std::locale(".utf-8"));
                 stream_dup_.imbue(std::locale(".utf-8"));
 
                 write(parser_.header(config_->path_rc));
@@ -319,29 +321,33 @@
                 if (hash_list.empty()) return false;
                 for (auto& a : hash_list) write_format(a);
 
+                if (!is_dup_write)
+                    std::filesystem::remove(config_->path_dup);
+
             } catch (...) {
                 cw.print_exception(std::current_exception(), __FUNCTIONW__);
             }
             return false;
         }
         void write(const std::wstring s) {
-            stream_out_ << s;
+            stream_spell_ << s;
         }
         void write(const std::wstringstream s) {
-            stream_out_ << s.str();
+            stream_spell_ << s.str();
         }
         void write_format(const std::wstring& s) {
-            stream_out_ << utils::po_format(s);
+            stream_spell_ << utils::po_format(s);
         }
         void write_dup(const std::wstring& s) {
             stream_dup_ << s.c_str() << "\n";
+            is_dup_write = true;
         }
         void close() {
             if (stream_in_.is_open())
                 stream_in_.close();
-            if (stream_out_.is_open()) {
-                stream_out_.flush();
-                stream_out_.close();
+            if (stream_spell_.is_open()) {
+                stream_spell_.flush();
+                stream_spell_.close();
             }
             if (stream_dup_.is_open()) {
                 stream_dup_.flush();
@@ -410,7 +416,7 @@ int wmain(int argc, const wchar_t* argv[]) {
 
         cw.print((std::wstringstream()
             << L"\n\t* Process file: " << cnf->path_rc.filename().wstring()
-            << L", out: " << cnf->path_out.filename().wstring()
+            << L", out: " << cnf->path_spell.filename().wstring()
             << L"\n")
         );
         if (!cnf->path_exclude.empty())

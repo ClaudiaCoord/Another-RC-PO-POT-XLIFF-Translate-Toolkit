@@ -49,4 +49,4 @@ jobs:
       if: startsWith(github.ref, 'refs/tags/')
       with:
         files: att-release-latest.zip
-        body: Next release ${{github.ref}}
+        name: Next release ${{github.ref}}

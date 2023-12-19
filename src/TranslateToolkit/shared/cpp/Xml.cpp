@@ -4,17 +4,8 @@
     See README.md for more details.
 */
 
-#define _CRT_SECURE_NO_WARNINGS
-#define WIN32_LEAN_AND_MEAN
-#include <windows.h>
-
-#include <map>
-#include <list>
-#include <string>
-#include <fstream>
-#include <sstream>
-#include <type_traits>
-
+#define _NO_CONFIGINFO 1
+#include "..\h\global.h"
 #include "Xml.h"
 
 namespace xml {
