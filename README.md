@@ -152,3 +152,6 @@ Options:
 		-p x:\path\to\file\resource.po
 
 ```
+
+[Microsoft translator language support](https://www.microsoft.com/en-us/translator/help/windows-10/)  
+![Microsoft dialog - Add language](addlang.png)
