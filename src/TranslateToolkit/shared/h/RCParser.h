@@ -42,6 +42,15 @@ namespace PARSERS {
                 if (line.empty())
                     return std::wstring();
 
+                #if defined (_DEBUG_V)
+                {
+                    size_t n0 = line.find(L"POPUP");
+                    if (n0 != std::wstring::npos) {
+                        ::OutputDebugStringW(line.c_str());
+                    }
+                }
+                #endif  
+
                 do {
                     const auto c = line.at(0);
                     if (c == L'L') {
@@ -49,8 +58,14 @@ namespace PARSERS {
                             return (std::wstringstream() << L"LANGUAGE " << config_->lang_id.c_str() << L"\n").str();
                     }
 
-                    for (auto& a : Names)
-                        if (line.starts_with(a)) return std::wstring(line);
+                    {
+                        std::wstring w(line);
+                        size_t n0 = w.find_first_not_of(L" \r\n\t");
+                        if (n0 != std::wstring::npos)
+                            w = w.substr(n0);
+                        for (auto& a : Names)
+                            if (w.starts_with(a)) return std::wstring(line);
+                    }
 
                     size_t n1 = line.find_first_of(separators::text);
                     if (n1 == std::wstring::npos) break;
@@ -68,8 +83,8 @@ namespace PARSERS {
                         });
                     if (it == dictionary_.end()) break;
 
-                    LANGP& li = *static_cast<LANGP*>(&*it);
-                    return line.replace((n1 + 1), line_.length(), li.second);
+                    LANGP* li = static_cast<LANGP*>(&*it);
+                    return line.replace((n1 + 1), line_.length(), li->second);
 
                 } while (0);
 

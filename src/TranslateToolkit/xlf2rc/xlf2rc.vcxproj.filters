@@ -35,6 +35,9 @@
     <ClInclude Include="..\shared\h\Xml.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="..\shared\h\Lang.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\shared\rc\resource_exe.rc">

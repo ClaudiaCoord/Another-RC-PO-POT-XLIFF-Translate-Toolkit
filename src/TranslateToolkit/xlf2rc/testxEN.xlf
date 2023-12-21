@@ -1,1102 +1,698 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2">
-  <file original="Translate/translate/MIDIMT_STRINGxXxEN.po" source-language="ru" target-language="en">
+  <file original="Translate/translate/MIDIMT_MENUxXxEN.po" source-language="ru" target-language="en">
    <body>
-    <trans-unit id="41656737">
-      <source xml:lang="ru">&Микшер</source>
-      <target xml:lang="en">&Mixer</target>
+    <trans-unit id="41656463">
+      <source xml:lang="ru">&Анимация</source>
+      <target xml:lang="en">&Animation</target>
     </trans-unit>
-    <trans-unit id="41656736">
-      <source xml:lang="ru">&Настройки</source>
+    <trans-unit id="41656462">
+      <source xml:lang="ru">&Аудио микшер</source>
+      <target xml:lang="en">&Audio mixer</target>
+    </trans-unit>
+    <trans-unit id="41656461">
+      <source xml:lang="ru">&Закрыть</source>
+      <target xml:lang="en">&Close</target>
+    </trans-unit>
+    <trans-unit id="41656460">
+      <source xml:lang="ru">&Информация</source>
+      <target xml:lang="en">&Information</target>
+    </trans-unit>
+    <trans-unit id="41656459">
+      <source xml:lang="ru">&Монитор</source>
+      <target xml:lang="en">&Monitor</target>
+    </trans-unit>
+    <trans-unit id="41656458">
+      <source xml:lang="ru">&Мониторинг</source>
+      <target xml:lang="en">&Monitoring</target>
+    </trans-unit>
+    <trans-unit id="41656457">
+      <source xml:lang="ru">&Настройка</source>
       <target xml:lang="en">&Settings</target>
     </trans-unit>
-    <trans-unit id="41656735">
-      <source xml:lang="ru">CA сертификат</source>
-      <target xml:lang="en">CA certificate</target>
+    <trans-unit id="41656456">
+      <source xml:lang="ru">&Просмотр лог-файла</source>
+      <target xml:lang="en">&View log file</target>
     </trans-unit>
-    <trans-unit id="41656734">
-      <source xml:lang="ru">Co*Create - не удалось создать экземпляр.</source>
-      <target xml:lang="en">Co*Create - failed to create an instance.</target>
+    <trans-unit id="41656455">
+      <source xml:lang="ru">&Путь приложений</source>
+      <target xml:lang="en">&Application path</target>
     </trans-unit>
-    <trans-unit id="41656733">
-      <source xml:lang="ru">Co*Initialize инициализация не удалась.</source>
-      <target xml:lang="en">Co*Initialize initialization failed.</target>
+    <trans-unit id="41656454">
+      <source xml:lang="ru">Баланс (мастер)</source>
+      <target xml:lang="en">Balance (master)</target>
     </trans-unit>
-    <trans-unit id="41656732">
-      <source xml:lang="ru">JOG (перемотка видеокадра)</source>
-      <target xml:lang="en">JOG (rewind video frame)</target>
+    <trans-unit id="41656453">
+      <source xml:lang="ru">Баланс..</source>
+      <target xml:lang="en">Balance..</target>
     </trans-unit>
-    <trans-unit id="41656731">
-      <source xml:lang="ru">MIDI-MT Конфигурация</source>
-      <target xml:lang="en">MIDI-MT Configuration</target>
+    <trans-unit id="41656452">
+      <source xml:lang="ru">Без звука (мастер)</source>
+      <target xml:lang="en">Silent (master)</target>
     </trans-unit>
-    <trans-unit id="41656730">
-      <source xml:lang="ru">MIDI-MT транслятор</source>
-      <target xml:lang="en">MIDI-MT translator</target>
+    <trans-unit id="41656451">
+      <source xml:lang="ru">Без звука..</source>
+      <target xml:lang="en">Soundless..</target>
     </trans-unit>
-    <trans-unit id="41656729">
-      <source xml:lang="ru">MIDIMT</source>
-      <target xml:lang="en">MIDIMT</target>
-    </trans-unit>
-    <trans-unit id="41656728">
-      <source xml:lang="ru">MIDIMT - Аудио микшер не запущен:</source>
-      <target xml:lang="en">MIDIMT - Audio mixer is not running:</target>
-    </trans-unit>
-    <trans-unit id="41656727">
-      <source xml:lang="ru">MIDIMT - Невозможно закончить операцию:</source>
-      <target xml:lang="en">MIDIMT - Unable to complete operation:</target>
-    </trans-unit>
-    <trans-unit id="41656726">
-      <source xml:lang="ru">OK</source>
-      <target xml:lang="en">OK</target>
-    </trans-unit>
-    <trans-unit id="41656725">
-      <source xml:lang="ru">[Конфигурация пуста..]</source>
-      <target xml:lang="en">[Configuration is empty..]</target>
-    </trans-unit>
-    <trans-unit id="41656724">
-      <source xml:lang="ru">Автозапуск запрещен в общей конфигурации.</source>
-      <target xml:lang="en">Autorun is disabled in the general configuration.</target>
-    </trans-unit>
-    <trans-unit id="41656723">
-      <source xml:lang="ru">Аудио пиковый измеритель не доступен.</source>
-      <target xml:lang="en">Audio peak meter is not available.</target>
-    </trans-unit>
-    <trans-unit id="41656722">
-      <source xml:lang="ru">Аудио сеанс '{0}' – неправильное состояние регистрации '{1}': {2}/{3}</source>
-      <target xml:lang="en">Audio session '{0}' - bad registration state '{1}': {2}/{3}</target>
-    </trans-unit>
-    <trans-unit id="41656721">
-      <source xml:lang="ru">Аудиомикшер не запущен, проверьте настройки, должен быть включен запуск аудио панели.</source>
-      <target xml:lang="en">The audio mixer is not running, check the settings, the audio panel launch must be enabled.</target>
-    </trans-unit>
-    <trans-unit id="41656720">
-      <source xml:lang="ru">Бридж уже запущен.</source>
-      <target xml:lang="en">The bridge has already been launched.</target>
-    </trans-unit>
-    <trans-unit id="41656719">
-      <source xml:lang="ru">Бридж уже остановлен.</source>
-      <target xml:lang="en">The bridge has already stopped.</target>
-    </trans-unit>
-    <trans-unit id="41656718">
-      <source xml:lang="ru">Бридж успешно запущен, инициализировано {0}, загружено {1}, запущено {2} плагинов.</source>
-      <target xml:lang="en">Bridge launched successfully, {0} initialized, {1} loaded, {2} plugins running.</target>
-    </trans-unit>
-    <trans-unit id="41656717">
-      <source xml:lang="ru">Бридж успешно остановлен, инициализировано {0}, загружено {1}, запущено {2}, остановлено {3} плагинов.</source>
-      <target xml:lang="en">Bridge successfully stopped, {0} initialized, {1} loaded, {2} started, {3} plugins stopped.</target>
-    </trans-unit>
-    <trans-unit id="41656716">
-      <source xml:lang="ru">В этой конфигурации не настроены MIDI-клавиши.</source>
-      <target xml:lang="en">There are no MIDI keys configured in this configuration.</target>
-    </trans-unit>
-    <trans-unit id="41656715">
+    <trans-unit id="41656450">
       <source xml:lang="ru">Вверх (джойстик)</source>
       <target xml:lang="en">Up (joystick)</target>
     </trans-unit>
-    <trans-unit id="41656714">
-      <source xml:lang="ru">Версия драйвера [{0}]</source>
-      <target xml:lang="en">Driver version [{0}]</target>
+    <trans-unit id="41656449">
+      <source xml:lang="ru">Вертикально слева</source>
+      <target xml:lang="en">Vertical left</target>
     </trans-unit>
-    <trans-unit id="41656713">
-      <source xml:lang="ru">Версия установленного Virtual MIDI драйвера: {0}</source>
-      <target xml:lang="en">Installed Virtual MIDI driver version: {0}</target>
+    <trans-unit id="41656448">
+      <source xml:lang="ru">Вертикально справа</source>
+      <target xml:lang="en">Vertical right</target>
     </trans-unit>
-    <trans-unit id="41656712">
-      <source xml:lang="ru">Виртуальный MIDI драйвер не установлен. Необходимо установить пакет loopMidi, или скачать полную версию установщика и переустановить MIDI-MT. Подробнее: https://claudiacoord.github.io/MIDI-MT/docs/RU/Dependencies.html</source>
-      <target xml:lang="en">The virtual MIDI driver is not installed. You need to install the loopMidi package, or download the full installer and reinstall MIDI-MT. More details: https://claudiacoord.github.io/MIDI-MT/docs/RU/Dependencies.html</target>
-    </trans-unit>
-    <trans-unit id="41656711">
-      <source xml:lang="ru">Включен={0},настройки={1},запущен={2}</source>
-      <target xml:lang="en">Enabled={0}, settings={1}, running={2}</target>
-    </trans-unit>
-    <trans-unit id="41656710">
+    <trans-unit id="41656447">
       <source xml:lang="ru">Влево (джойстик)</source>
       <target xml:lang="en">Left (joystick)</target>
     </trans-unit>
-    <trans-unit id="41656709">
+    <trans-unit id="41656446">
       <source xml:lang="ru">Вниз (джойстик)</source>
       <target xml:lang="en">Down (joystick)</target>
     </trans-unit>
-    <trans-unit id="41656708">
-      <source xml:lang="ru">Внимание, в этой конфигурации не настроены MIDI-клавиши! записанная конфигурацию будет не работоспособной.</source>
-      <target xml:lang="en">Attention, this configuration does not have MIDI keys configured! the recorded configuration will not work.</target>
-    </trans-unit>
-    <trans-unit id="41656707">
-      <source xml:lang="ru">Внимание, несоответствие количества устройств в итоговом списке, система/список = {0}/{1}</source>
-      <target xml:lang="en">Attention, the number of devices in the final list does not match, system/list = {0}/{1}</target>
-    </trans-unit>
-    <trans-unit id="41656706">
+    <trans-unit id="41656445">
       <source xml:lang="ru">Вправо (джойстик)</source>
       <target xml:lang="en">Right (joystick)</target>
     </trans-unit>
-    <trans-unit id="41656705">
-      <source xml:lang="ru">Все настройки '{0}', версия конфигурационного файла: {1}</source>
-      <target xml:lang="en">All settings '{0}', configuration file version: {1}</target>
+    <trans-unit id="41656444">
+      <source xml:lang="ru">Вставить</source>
+      <target xml:lang="en">Insert</target>
     </trans-unit>
-    <trans-unit id="41656704">
+    <trans-unit id="41656443">
       <source xml:lang="ru">Вы&ход</source>
       <target xml:lang="en">Exit</target>
     </trans-unit>
-    <trans-unit id="41656703">
-      <source xml:lang="ru">Выберите ARTNET интерфейс</source>
-      <target xml:lang="en">Select ARTNET interface</target>
-    </trans-unit>
-    <trans-unit id="41656702">
-      <source xml:lang="ru">Выберите DMX устройство</source>
-      <target xml:lang="en">Select DMX device</target>
-    </trans-unit>
-    <trans-unit id="41656701">
-      <source xml:lang="ru">Выбранная конфигурация не поддерживает авто старт.</source>
-      <target xml:lang="en">The selected configuration does not support auto start.</target>
-    </trans-unit>
-    <trans-unit id="41656700">
-      <source xml:lang="ru">Выбранный {0} язык будет активным после перезапуска окна.</source>
-      <target xml:lang="en">The selected {0} language will be active after the window is restarted.</target>
-    </trans-unit>
-    <trans-unit id="41656699">
-      <source xml:lang="ru">Выходные MIDI порты отключены.</source>
-      <target xml:lang="en">MIDI output ports are disabled.</target>
-    </trans-unit>
-    <trans-unit id="41656698">
-      <source xml:lang="ru">Доступ на запись к файлу конфигурации запрещен, '{0}'</source>
-      <target xml:lang="en">Write access to the configuration file is denied, '{0}'</target>
-    </trans-unit>
-    <trans-unit id="41656697">
-      <source xml:lang="ru">Запись (проигрыватель)</source>
-      <target xml:lang="en">Recording (player)</target>
-    </trans-unit>
-    <trans-unit id="41656696">
-      <source xml:lang="ru">Играть (проигрыватель)</source>
-      <target xml:lang="en">Play (player)</target>
-    </trans-unit>
-    <trans-unit id="41656695">
-      <source xml:lang="ru">Имя MIDI-устройства не задано в конфигурации.</source>
-      <target xml:lang="en">The MIDI device name is not configured.</target>
-    </trans-unit>
-    <trans-unit id="41656694">
-      <source xml:lang="ru">Имя конфигурации не указано, продолжение невозможно.</source>
-      <target xml:lang="en">The configuration name is not specified and cannot be continued.</target>
-    </trans-unit>
-    <trans-unit id="41656693">
-      <source xml:lang="ru">Инициализируйте, прежде чем вызывать это..</source>
-      <target xml:lang="en">Initialize before calling this..</target>
-    </trans-unit>
-    <trans-unit id="41656692">
-      <source xml:lang="ru">Клиент MMQTT успешно создан, продолжаем..</source>
-      <target xml:lang="en">The MMQTT client has been successfully created, continue...</target>
-    </trans-unit>
-    <trans-unit id="41656691">
-      <source xml:lang="ru">Конфигурация MQTT не заполнена, продолжение невозможно.</source>
-      <target xml:lang="en">MQTT configuration is empty and cannot continue.</target>
-    </trans-unit>
-    <trans-unit id="41656690">
-      <source xml:lang="ru">Конфигурация для модуля {0} пуста..</source>
-      <target xml:lang="en">The configuration for module {0} is empty..</target>
-    </trans-unit>
-    <trans-unit id="41656689">
-      <source xml:lang="ru">Конфигурация загружена из драйвера</source>
-      <target xml:lang="en">Configuration loaded from driver</target>
-    </trans-unit>
-    <trans-unit id="41656688">
-      <source xml:lang="ru">Конфигурация загружена из файла</source>
-      <target xml:lang="en">Configuration loaded from file</target>
-    </trans-unit>
-    <trans-unit id="41656687">
-      <source xml:lang="ru">Конфигурация загружена из файла: {0}</source>
-      <target xml:lang="en">Configuration loaded from file: {0}</target>
-    </trans-unit>
-    <trans-unit id="41656686">
-      <source xml:lang="ru">Конфигурация загружена..</source>
-      <target xml:lang="en">Configuration loaded..</target>
-    </trans-unit>
-    <trans-unit id="41656685">
-      <source xml:lang="ru">Конфигурация обновлена: {0} = {1}{2}</source>
-      <target xml:lang="en">Configuration updated: {0} = {1}{2}</target>
-    </trans-unit>
-    <trans-unit id="41656684">
-      <source xml:lang="ru">Конфигурация пустая..</source>
-      <target xml:lang="en">Configuration is empty..</target>
-    </trans-unit>
-    <trans-unit id="41656683">
-      <source xml:lang="ru">Конфигурация создана заново и требует заполнения</source>
-      <target xml:lang="en">The configuration has been created anew and requires filling out</target>
-    </trans-unit>
-    <trans-unit id="41656682">
-      <source xml:lang="ru">Конфигурация уже загружена..</source>
-      <target xml:lang="en">The configuration has already been loaded..</target>
-    </trans-unit>
-    <trans-unit id="41656681">
-      <source xml:lang="ru">Микшер аудио сеансов запущен, на момент старта имеется {0} запущенных программ, доступных для регулирования.</source>
-      <target xml:lang="en">The audio session mixer is running, at the time of start there are {0} running programs available for regulation.</target>
-    </trans-unit>
-    <trans-unit id="41656680">
-      <source xml:lang="ru">Микшер аудио сессий не был правильно остановлен, сведения об ошибке должны быть в файле журнала.</source>
-      <target xml:lang="en">The audio session mixer was not stopped correctly, the error details should be in the log file.</target>
-    </trans-unit>
-    <trans-unit id="41656679">
-      <source xml:lang="ru">Микшер аудио сессий остановлен.</source>
-      <target xml:lang="en">The audio session mixer has stopped.</target>
-    </trans-unit>
-    <trans-unit id="41656678">
-      <source xml:lang="ru">Модули не найдены, запуск невозможен.</source>
-      <target xml:lang="en">No modules found, startup impossible.</target>
-    </trans-unit>
-    <trans-unit id="41656677">
-      <source xml:lang="ru">Модуль не является плагином MIDI-MT, отсутствуют необходимые точки входа.</source>
-      <target xml:lang="en">The module is not a MIDI-MT plugin and the required entry points are missing.</target>
-    </trans-unit>
-    <trans-unit id="41656676">
-      <source xml:lang="ru">Мультимедийные клавиши</source>
-      <target xml:lang="en">Multimedia keys</target>
-    </trans-unit>
-    <trans-unit id="41656675">
-      <source xml:lang="ru">Настройки MIDI</source>
-      <target xml:lang="en">MIDI Settings</target>
-    </trans-unit>
-    <trans-unit id="41656674">
-      <source xml:lang="ru">Настройки Умного Дома (MQTT)</source>
-      <target xml:lang="en">Smart Home Settings (MQTT)</target>
-    </trans-unit>
-    <trans-unit id="41656673">
-      <source xml:lang="ru">Настройки мультимедиа клавиатуры (MMKEYS)</source>
-      <target xml:lang="en">Multimedia Keyboard Settings (MMKEYS)</target>
-    </trans-unit>
-    <trans-unit id="41656672">
-      <source xml:lang="ru">Настройки управления освещением ({0})</source>
-      <target xml:lang="en">Lighting control settings ({0})</target>
-    </trans-unit>
-    <trans-unit id="41656671">
-      <source xml:lang="ru">Не задано имя для активного устройства, продолжение невозможно, id = {0}/{1}</source>
-      <target xml:lang="en">The name for the active device is not specified, continuation is impossible, id = {0}/{1}</target>
-    </trans-unit>
-    <trans-unit id="41656670">
-      <source xml:lang="ru">Не заданы прокси-порты в конфигурации, MIDI-прокси отключено.</source>
-      <target xml:lang="en">Proxy ports are not specified in the configuration, MIDI proxy is disabled.</target>
-    </trans-unit>
-    <trans-unit id="41656669">
-      <source xml:lang="ru">Не назначено</source>
-      <target xml:lang="en">Not assigned</target>
-    </trans-unit>
-    <trans-unit id="41656668">
-      <source xml:lang="ru">Не удается запустить MIDI-устройство, продолжение невозможно, id = {0}/{1}</source>
-      <target xml:lang="en">Cannot start MIDI device, cannot continue, id = {0}/{1}</target>
-    </trans-unit>
-    <trans-unit id="41656667">
-      <source xml:lang="ru">Не удается открыть MIDI-устройство, продолжение невозможно, id = {0}/{1}</source>
-      <target xml:lang="en">Cannot open MIDI device, cannot continue, id = {0}/{1}</target>
-    </trans-unit>
-    <trans-unit id="41656666">
-      <source xml:lang="ru">Не удалось загрузить плагины, предварительно инициализировано {0}, загружено 0 плагинов.</source>
-      <target xml:lang="en">Failed to load plugins, pre-initialized {0}, 0 plugins loaded.</target>
-    </trans-unit>
-    <trans-unit id="41656665">
-      <source xml:lang="ru">Не удалось запустить бридж, ошибка при старте плагинов, инициализировано {0}, загружено {1} плагинов.</source>
-      <target xml:lang="en">Failed to start the bridge, error when starting plugins, {0} initialized, {1} plugins loaded.</target>
-    </trans-unit>
-    <trans-unit id="41656664">
-      <source xml:lang="ru">Не удалось запустить микшер аудио сессий, сведения об ошибке должны быть в файле журнала.</source>
-      <target xml:lang="en">The audio session mixer could not be started, error details should be in the log file.</target>
-    </trans-unit>
-    <trans-unit id="41656663">
-      <source xml:lang="ru">Не удалось инициализировать плагины, совместимые плагины не обнаружены.</source>
-      <target xml:lang="en">Failed to initialize plugins, no compatible plugins were found.</target>
-    </trans-unit>
-    <trans-unit id="41656662">
-      <source xml:lang="ru">Не удалось остановить бридж, ошибка при остановке плагинов, инициализировано {0}, загружено {1}, запущено {2} плагинов.</source>
-      <target xml:lang="en">Failed to stop bridge, error stopping plugins, {0} initialized, {1} loaded, {2} plugins running.</target>
-    </trans-unit>
-    <trans-unit id="41656661">
-      <source xml:lang="ru">Не удалось открыть модуль плагина. Модуль отсутствует или поврежден, DLL не был загружен и вернул значение null.</source>
-      <target xml:lang="en">Failed to open plugin module. The module is missing or damaged, the DLL was not loaded and returned null.</target>
-    </trans-unit>
-    <trans-unit id="41656660">
-      <source xml:lang="ru">Не удалось переключается на поток пользовательского интерфейса, запуск аудио панели прерван.</source>
-      <target xml:lang="en">Failed to switch to UI thread, audio panel startup aborted.</target>
-    </trans-unit>
-    <trans-unit id="41656659">
-      <source xml:lang="ru">Не удалось подключиться к серверу MQTT:</source>
-      <target xml:lang="en">Failed to connect to MQTT server:</target>
-    </trans-unit>
-    <trans-unit id="41656658">
-      <source xml:lang="ru">Не удалось получить аудио устройство по умолчанию.</source>
-      <target xml:lang="en">Failed to get default audio device.</target>
-    </trans-unit>
-    <trans-unit id="41656657">
-      <source xml:lang="ru">Не удалось получить список аудио сеансов.</source>
-      <target xml:lang="en">Failed to get list of audio sessions.</target>
-    </trans-unit>
-    <trans-unit id="41656656">
-      <source xml:lang="ru">Неверный идентификатор события. Пожалуйста, перезапустите это приложение.</source>
-      <target xml:lang="en">Invalid event ID. Please restart this application.</target>
-    </trans-unit>
-    <trans-unit id="41656655">
-      <source xml:lang="ru">Необходимо установить Virtual MIDI драйвер!</source>
-      <target xml:lang="en">You need to install the Virtual MIDI driver!</target>
-    </trans-unit>
-    <trans-unit id="41656654">
-      <source xml:lang="ru">Неподдерживаемая реализация в коде, метод не переопределен: {0}</source>
-      <target xml:lang="en">Unsupported implementation in code, method not overridden: {0}</target>
-    </trans-unit>
-    <trans-unit id="41656653">
-      <source xml:lang="ru">Номер DMX канала</source>
-      <target xml:lang="en">DMX channel number</target>
-    </trans-unit>
-    <trans-unit id="41656652">
-      <source xml:lang="ru">Обнаружена новая версия конфигурации..</source>
-      <target xml:lang="en">New configuration version detected..</target>
-    </trans-unit>
-    <trans-unit id="41656651">
-      <source xml:lang="ru">Окно панели аудиомикшера не соответствует статусу, невозможно продолжить следующую операцию.</source>
-      <target xml:lang="en">The audio mixer panel window does not have the correct status and the next operation cannot be continued.</target>
-    </trans-unit>
-    <trans-unit id="41656650">
-      <source xml:lang="ru">Отключение аудио сессии, причина='{0}'</source>
-      <target xml:lang="en">Disabling audio session, reason='{0}'</target>
-    </trans-unit>
-    <trans-unit id="41656649">
-      <source xml:lang="ru">Отключено от сервера MQTT:</source>
-      <target xml:lang="en">Disconnected from MQTT server:</target>
-    </trans-unit>
-    <trans-unit id="41656648">
-      <source xml:lang="ru">Ошибка инициализации плагина, невозможно преобразовать CLSID/GUID из указанной строки.</source>
-      <target xml:lang="en">Plugin initialization error, unable to convert CLSID/GUID from specified string.</target>
-    </trans-unit>
-    <trans-unit id="41656647">
-      <source xml:lang="ru">Ошибка инициализации приложения, продолжение невозможно.</source>
-      <target xml:lang="en">Application initialization error, continuation is not possible.</target>
-    </trans-unit>
-    <trans-unit id="41656646">
-      <source xml:lang="ru">Ошибка создания клиента MQTT, отмена.</source>
-      <target xml:lang="en">Error creating MQTT client, canceling.</target>
-    </trans-unit>
-    <trans-unit id="41656645">
-      <source xml:lang="ru">Панель аудио микшера - продолжение невозможно, ошибка инициализации.</source>
-      <target xml:lang="en">Audio mixer panel - cannot continue, initialization error.</target>
-    </trans-unit>
-    <trans-unit id="41656644">
-      <source xml:lang="ru">Панель аудиомикшера - продолжение невозможно, элементы индекса неверны.</source>
-      <target xml:lang="en">Audio Mixer Panel - Cannot continue, index items are incorrect.</target>
-    </trans-unit>
-    <trans-unit id="41656643">
-      <source xml:lang="ru">Панель аудиомикшера вызвана не в потоке пользовательского интерфейса, изменения невозможны.</source>
-      <target xml:lang="en">The audio mixer panel is not invoked on a UI thread and changes cannot be made.</target>
-    </trans-unit>
-    <trans-unit id="41656642">
-      <source xml:lang="ru">Панель аудиомикшера обнаружила неверный элемент, прервано создание окна панели.</source>
-      <target xml:lang="en">The audio mixer panel detected an invalid element and the creation of the panel window was aborted.</target>
-    </trans-unit>
-    <trans-unit id="41656641">
-      <source xml:lang="ru">Перемотка вперед (проигрыватель)</source>
-      <target xml:lang="en">Fast forward (player)</target>
-    </trans-unit>
-    <trans-unit id="41656640">
-      <source xml:lang="ru">Перемотка назад (проигрыватель)</source>
-      <target xml:lang="en">Rewind (player)</target>
-    </trans-unit>
-    <trans-unit id="41656639">
-      <source xml:lang="ru">Плагины инициализированы успешно, предварительная инициализация {0}, загружено {1} плагинов.</source>
-      <target xml:lang="en">Plugins initialized successfully, pre-initialization {0}, {1} plugins loaded.</target>
-    </trans-unit>
-    <trans-unit id="41656638">
-      <source xml:lang="ru">Плагины уже загружены, перед перезагрузкой выполните сброс.</source>
-      <target xml:lang="en">The plugins are already loaded, please reset before rebooting.</target>
-    </trans-unit>
-    <trans-unit id="41656637">
-      <source xml:lang="ru">Подключено к серверу MQTT:</source>
-      <target xml:lang="en">Connected to MQTT server:</target>
-    </trans-unit>
-    <trans-unit id="41656636">
-      <source xml:lang="ru">Подходящие интерфейсы отсутствуют</source>
-      <target xml:lang="en">No suitable interfaces available</target>
-    </trans-unit>
-    <trans-unit id="41656635">
-      <source xml:lang="ru">Подходящие устройства отсутствуют</source>
-      <target xml:lang="en">No suitable devices available</target>
-    </trans-unit>
-    <trans-unit id="41656634">
-      <source xml:lang="ru">Пожалуйста, отредактируйте конфигурацию перед запуском.</source>
-      <target xml:lang="en">Please edit the configuration before starting.</target>
-    </trans-unit>
-    <trans-unit id="41656633">
-      <source xml:lang="ru">Пожалуйста, перед запуском монитора, запустите транслятор из меню, выбрав пункт 'Старт'.</source>
-      <target xml:lang="en">Please, before starting the monitor, start the translator from the menu by selecting 'Start'.</target>
-    </trans-unit>
-    <trans-unit id="41656632">
-      <source xml:lang="ru">При запуске будут созданы {0} выходных MIDI портов.</source>
-      <target xml:lang="en">Upon startup, {0} MIDI output ports will be created.</target>
-    </trans-unit>
-    <trans-unit id="41656631">
-      <source xml:lang="ru">При запуске будут созданы {0} прокси MIDI портов.</source>
-      <target xml:lang="en">Upon startup, {0} proxy MIDI ports will be created.</target>
-    </trans-unit>
-    <trans-unit id="41656630">
-      <source xml:lang="ru">При запуске был указан файл конфигурации: '{0}'. Установить его как конфигурацию для последующих запусков?</source>
-      <target xml:lang="en">At startup, the configuration file was specified: '{0}'. Set it as a configuration for subsequent runs?</target>
-    </trans-unit>
-    <trans-unit id="41656629">
-      <source xml:lang="ru">При открытии редактора, был указан файл конфигурации: '{0}'. Сохранить его с тем-же именем?</source>
-      <target xml:lang="en">When opening the editor, the configuration file was specified: '{0}'. Save it with the same name?</target>
-    </trans-unit>
-    <trans-unit id="41656628">
-      <source xml:lang="ru">Проблема с версией драйвера [{0}]</source>
-      <target xml:lang="en">Problem with driver version [{0}]</target>
-    </trans-unit>
-    <trans-unit id="41656627">
-      <source xml:lang="ru">Проверьте права пользователя на запись файлов в каталоге приложения. Если ошибка повториться, попробуйте отключить ведение лог-файла.</source>
-      <target xml:lang="en">Check the user's permissions to write files in the application directory. If the error persists, try disabling logging.</target>
-    </trans-unit>
-    <trans-unit id="41656626">
-      <source xml:lang="ru">Прокси MIDI порты отключены.</source>
-      <target xml:lang="en">Proxy MIDI ports are disabled.</target>
-    </trans-unit>
-    <trans-unit id="41656625">
-      <source xml:lang="ru">Сбой диспетчера аудио сеансов.</source>
-      <target xml:lang="en">Audio Session Manager crashed.</target>
-    </trans-unit>
-    <trans-unit id="41656624">
-      <source xml:lang="ru">Сбой загрузки конфигурации, файл не найден, запуск невозможен..</source>
-      <target xml:lang="en">Configuration loading failed, file not found, launch impossible.</target>
-    </trans-unit>
-    <trans-unit id="41656623">
-      <source xml:lang="ru">Скраб</source>
-      <target xml:lang="en">Scrub</target>
-    </trans-unit>
-    <trans-unit id="41656622">
-      <source xml:lang="ru">Служба управления Умным домом запущена.</source>
-      <target xml:lang="en">The Smart Home control service has been launched.</target>
-    </trans-unit>
-    <trans-unit id="41656621">
-      <source xml:lang="ru">Служба управления Умным домом остановлена.</source>
-      <target xml:lang="en">The Smart Home control service has been stopped.</target>
-    </trans-unit>
-    <trans-unit id="41656620">
-      <source xml:lang="ru">Служба управления мультимедийными ключами запущена.</source>
-      <target xml:lang="en">The Media Key Management service is running.</target>
-    </trans-unit>
-    <trans-unit id="41656619">
-      <source xml:lang="ru">Служба управления мультимедийными ключами остановлена.</source>
-      <target xml:lang="en">The Media Key Management service has stopped.</target>
-    </trans-unit>
-    <trans-unit id="41656618">
-      <source xml:lang="ru">Служба управления освещением ArtNet запущена с использованием широковещательного адреса {0}:{1} в сети {2}.</source>
-      <target xml:lang="en">The ArtNet Lighting Control Service is running using the broadcast address {0}:{1} on network {2}.</target>
-    </trans-unit>
-    <trans-unit id="41656617">
-      <source xml:lang="ru">Служба управления освещением ArtNet не запущена, конфигурация службы не заполнена.</source>
-      <target xml:lang="en">The ArtNet lighting control service is not running, the service configuration is not filled in.</target>
-    </trans-unit>
-    <trans-unit id="41656616">
-      <source xml:lang="ru">Служба управления освещением ArtNet не запущена, сеть {0} не найдена..</source>
-      <target xml:lang="en">ArtNet lighting control service is not running, network {0} not found..</target>
-    </trans-unit>
-    <trans-unit id="41656615">
-      <source xml:lang="ru">Служба управления освещением ArtNet остановлена.</source>
-      <target xml:lang="en">The ArtNet lighting control service has stopped.</target>
-    </trans-unit>
-    <trans-unit id="41656614">
-      <source xml:lang="ru">Служба управления освещением DMX запущена с использованием COM{0} – {1}.</source>
-      <target xml:lang="en">The DMX lighting control service is started using COM{0} - {1}.</target>
-    </trans-unit>
-    <trans-unit id="41656613">
-      <source xml:lang="ru">Служба управления освещением DMX не запущена, конфигурация службы не заполнена.</source>
-      <target xml:lang="en">The DMX lighting control service is not running and the service configuration is not filled in.</target>
-    </trans-unit>
-    <trans-unit id="41656612">
-      <source xml:lang="ru">Служба управления освещением DMX не запущена, устройство COM{0} не подключено..</source>
-      <target xml:lang="en">The DMX lighting control service is not running, the COM{0} device is not connected..</target>
-    </trans-unit>
-    <trans-unit id="41656611">
-      <source xml:lang="ru">Служба управления освещением DMX остановлена.</source>
-      <target xml:lang="en">The DMX lighting control service has stopped.</target>
-    </trans-unit>
-    <trans-unit id="41656610">
-      <source xml:lang="ru">Создана аудио сессия, имя='{0}'</source>
-      <target xml:lang="en">Audio session created, name='{0}'</target>
-    </trans-unit>
-    <trans-unit id="41656609">
-      <source xml:lang="ru">Список аудио сессий пуст!</source>
-      <target xml:lang="en">The list of audio sessions is empty!</target>
-    </trans-unit>
-    <trans-unit id="41656608">
+    <trans-unit id="41656442">
+      <source xml:lang="ru">Горизонтально вверху</source>
+      <target xml:lang="en">Horizontally at the top</target>
+    </trans-unit>
+    <trans-unit id="41656441">
+      <source xml:lang="ru">Горизонтально внизу</source>
+      <target xml:lang="en">Horizontally below</target>
+    </trans-unit>
+    <trans-unit id="41656440">
+      <source xml:lang="ru">Громкость (мастер)</source>
+      <target xml:lang="en">Volume (master)</target>
+    </trans-unit>
+    <trans-unit id="41656439">
+      <source xml:lang="ru">Громкость..</source>
+      <target xml:lang="en">Volume..</target>
+    </trans-unit>
+    <trans-unit id="41656438">
+      <source xml:lang="ru">З&апомнить позицию</source>
+      <target xml:lang="en">Remember position</target>
+    </trans-unit>
+    <trans-unit id="41656437">
+      <source xml:lang="ru">Запись</source>
+      <target xml:lang="en">Record</target>
+    </trans-unit>
+    <trans-unit id="41656436">
+      <source xml:lang="ru">Играть/Пауза</source>
+      <target xml:lang="en">Play/Pause</target>
+    </trans-unit>
+    <trans-unit id="41656435">
+      <source xml:lang="ru">Канал 16 бит (расширенный)</source>
+      <target xml:lang="en">Channel 16 bit (extended)</target>
+    </trans-unit>
+    <trans-unit id="41656434">
+      <source xml:lang="ru">Канал 8 бит (стандарт)</source>
+      <target xml:lang="en">Channel 8 bit (standard)</target>
+    </trans-unit>
+    <trans-unit id="41656433">
+      <source xml:lang="ru">Кнопка</source>
+      <target xml:lang="en">Button</target>
+    </trans-unit>
+    <trans-unit id="41656432">
+      <source xml:lang="ru">Кнопка переключать, с индикацией</source>
+      <target xml:lang="en">Switch button, with indication</target>
+    </trans-unit>
+    <trans-unit id="41656431">
+      <source xml:lang="ru">Кнопки в системе «Умный дом»..</source>
+      <target xml:lang="en">Buttons in the Smart Home system..</target>
+    </trans-unit>
+    <trans-unit id="41656430">
+      <source xml:lang="ru">Кнопки..</source>
+      <target xml:lang="en">Buttons..</target>
+    </trans-unit>
+    <trans-unit id="41656429">
+      <source xml:lang="ru">Контроль относиться к аудио микшеру</source>
+      <target xml:lang="en">Control refers to audio mixer</target>
+    </trans-unit>
+    <trans-unit id="41656428">
+      <source xml:lang="ru">Контроль относиться к мультимедиа кнопкам</source>
+      <target xml:lang="en">Controls apply to multimedia buttons</target>
+    </trans-unit>
+    <trans-unit id="41656427">
+      <source xml:lang="ru">Контроль относиться к умному дому</source>
+      <target xml:lang="en">Control refers to a smart home</target>
+    </trans-unit>
+    <trans-unit id="41656426">
+      <source xml:lang="ru">Контроль относиться к управлению светом</source>
+      <target xml:lang="en">Control refers to light control</target>
+    </trans-unit>
+    <trans-unit id="41656425">
+      <source xml:lang="ru">Копировать</source>
+      <target xml:lang="en">Copy</target>
+    </trans-unit>
+    <trans-unit id="41656424">
+      <source xml:lang="ru">Круговой регулятор</source>
+      <target xml:lang="en">Circular regulator</target>
+    </trans-unit>
+    <trans-unit id="41656423">
+      <source xml:lang="ru">Круговой регулятор с инверсией</source>
+      <target xml:lang="en">Circular regulator with inversion</target>
+    </trans-unit>
+    <trans-unit id="41656422">
+      <source xml:lang="ru">Метро</source>
+      <target xml:lang="en">Metro</target>
+    </trans-unit>
+    <trans-unit id="41656421">
+      <source xml:lang="ru">Мультимедиа кнопки..</source>
+      <target xml:lang="en">Multimedia buttons..</target>
+    </trans-unit>
+    <trans-unit id="41656420">
+      <source xml:lang="ru">Настраиваемая</source>
+      <target xml:lang="en">Customizable</target>
+    </trans-unit>
+    <trans-unit id="41656419">
+      <source xml:lang="ru">Настройка темы</source>
+      <target xml:lang="en">Setting up a theme</target>
+    </trans-unit>
+    <trans-unit id="41656418">
+      <source xml:lang="ru">Не назначенный</source>
+      <target xml:lang="en">Unassigned</target>
+    </trans-unit>
+    <trans-unit id="41656417">
+      <source xml:lang="ru">Новая запись</source>
+      <target xml:lang="en">New entry</target>
+    </trans-unit>
+    <trans-unit id="41656416">
+      <source xml:lang="ru">Пиковый &измеритель громкости</source>
+      <target xml:lang="en">Peak &Volume Meter</target>
+    </trans-unit>
+    <trans-unit id="41656415">
+      <source xml:lang="ru">Полосковый регулятор</source>
+      <target xml:lang="en">Strip Regulator</target>
+    </trans-unit>
+    <trans-unit id="41656414">
+      <source xml:lang="ru">Полосковый регулятор с инверсией</source>
+      <target xml:lang="en">Strip Regulator with Inversion</target>
+    </trans-unit>
+    <trans-unit id="41656413">
+      <source xml:lang="ru">Предыдущий</source>
+      <target xml:lang="en">Previous</target>
+    </trans-unit>
+    <trans-unit id="41656412">
+      <source xml:lang="ru">Привязка &MIDI контролов</source>
+      <target xml:lang="en">Binding &MIDI controls</target>
+    </trans-unit>
+    <trans-unit id="41656411">
+      <source xml:lang="ru">Расположение..</source>
+      <target xml:lang="en">Location..</target>
+    </trans-unit>
+    <trans-unit id="41656410">
+      <source xml:lang="ru">Регуляторы в системе «Умный дом»..</source>
+      <target xml:lang="en">Regulators in the “Smart Home” system..</target>
+    </trans-unit>
+    <trans-unit id="41656409">
+      <source xml:lang="ru">Регуляторы..</source>
+      <target xml:lang="en">Regulators..</target>
+    </trans-unit>
+    <trans-unit id="41656408">
+      <source xml:lang="ru">Ретро</source>
+      <target xml:lang="en">Retro</target>
+    </trans-unit>
+    <trans-unit id="41656407">
+      <source xml:lang="ru">Светлая</source>
+      <target xml:lang="en">Light</target>
+    </trans-unit>
+    <trans-unit id="41656406">
+      <source xml:lang="ru">Скрабирование</source>
+      <target xml:lang="en">Scrubbing</target>
+    </trans-unit>
+    <trans-unit id="41656405">
+      <source xml:lang="ru">Следующий</source>
+      <target xml:lang="en">Next</target>
+    </trans-unit>
+    <trans-unit id="41656404">
+      <source xml:lang="ru">Современный</source>
+      <target xml:lang="en">Modern</target>
+    </trans-unit>
+    <trans-unit id="41656403">
+      <source xml:lang="ru">Соло (мастер)</source>
+      <target xml:lang="en">Solo (master)</target>
+    </trans-unit>
+    <trans-unit id="41656402">
+      <source xml:lang="ru">Соло..</source>
+      <target xml:lang="en">Solo..</target>
+    </trans-unit>
+    <trans-unit id="41656401">
       <source xml:lang="ru">Ст&арт</source>
       <target xml:lang="en">Start</target>
     </trans-unit>
-    <trans-unit id="41656607">
+    <trans-unit id="41656400">
       <source xml:lang="ru">Ст&оп</source>
       <target xml:lang="en">Stop</target>
     </trans-unit>
-    <trans-unit id="41656606">
-      <source xml:lang="ru">Стоп (проигрыватель)</source>
-      <target xml:lang="en">Stop (player)</target>
+    <trans-unit id="41656399">
+      <source xml:lang="ru">Стоп</source>
+      <target xml:lang="en">Stop</target>
     </trans-unit>
-    <trans-unit id="41656605">
-      <source xml:lang="ru">Увеличение</source>
-      <target xml:lang="en">Increase</target>
+    <trans-unit id="41656398">
+      <source xml:lang="ru">Тема..</source>
+      <target xml:lang="en">Subject..</target>
     </trans-unit>
-    <trans-unit id="41656604">
-      <source xml:lang="ru">Управление «Микшером»</source>
-      <target xml:lang="en">Mixer control</target>
+    <trans-unit id="41656397">
+      <source xml:lang="ru">Тёмная</source>
+      <target xml:lang="en">Dark</target>
     </trans-unit>
-    <trans-unit id="41656603">
-      <source xml:lang="ru">Управление «Умным домом»</source>
-      <target xml:lang="en">Smart Home Management</target>
+    <trans-unit id="41656396">
+      <source xml:lang="ru">Увеличение масштаба</source>
+      <target xml:lang="en">Zoom in</target>
     </trans-unit>
-    <trans-unit id="41656602">
-      <source xml:lang="ru">Управление освещением (16 бит)</source>
-      <target xml:lang="en">Lighting control (16 bit)</target>
+    <trans-unit id="41656395">
+      <source xml:lang="ru">Удалить</source>
+      <target xml:lang="en">Delete</target>
     </trans-unit>
-    <trans-unit id="41656601">
-      <source xml:lang="ru">Управление освещением (8 бит)</source>
-      <target xml:lang="en">Lighting control (8 bits)</target>
+    <trans-unit id="41656394">
+      <source xml:lang="ru">Управление звуком..</source>
+      <target xml:lang="en">Sound control...</target>
     </trans-unit>
-    <trans-unit id="41656600">
-      <source xml:lang="ru">Устанавливаемое значение из обратного вызова - неверный селектор.</source>
-      <target xml:lang="en">The value being set from the callback is an invalid selector.</target>
+    <trans-unit id="41656393">
+      <source xml:lang="ru">Установить как..</source>
+      <target xml:lang="en">Install as..</target>
     </trans-unit>
-    <trans-unit id="41656599">
-      <source xml:lang="ru">Установка обратного вызова возможна только после успешного запуска MIDI-моста.</source>
-      <target xml:lang="en">Setting a callback is only possible after the MIDI bridge has been successfully launched.</target>
+    <trans-unit id="41656392">
+      <source xml:lang="ru">Функции «Premiere Pro»..</source>
+      <target xml:lang="en">Premiere Pro features...</target>
     </trans-unit>
-    <trans-unit id="41656598">
-      <source xml:lang="ru">Установленный Virtual MIDI драйвер не найден! Необходимо установить пакет Virtual Loop MIDI для запуска MIDI-MT транслятора.</source>
-      <target xml:lang="en">The installed Virtual MIDI driver was not found! You must install the Virtual Loop MIDI package to run the MIDI-MT translator.</target>
+    <trans-unit id="41656391">
+      <source xml:lang="ru">Функции кнопки «в одно касание»..</source>
+      <target xml:lang="en">One-touch button functions...</target>
     </trans-unit>
-    <trans-unit id="41656597">
-      <source xml:lang="ru">Устройства не подключены, продолжение невозможно.</source>
-      <target xml:lang="en">The devices are not connected and cannot continue.</target>
+    <trans-unit id="41656390">
+      <source xml:lang="ru">Функции стандартной кнопки..</source>
+      <target xml:lang="en">Standard button functions...</target>
     </trans-unit>
-    <trans-unit id="41656596">
-      <source xml:lang="ru">Устройство {0} готово (система)</source>
-      <target xml:lang="en">Device {0} ready (system)</target>
+    <trans-unit id="41656389">
+      <source xml:lang="ru">Функция 1</source>
+      <target xml:lang="en">Function 1</target>
     </trans-unit>
-    <trans-unit id="41656595">
-      <source xml:lang="ru">Устройство {0} закрыто (система)</source>
-      <target xml:lang="en">Device {0} closed (system)</target>
+    <trans-unit id="41656388">
+      <source xml:lang="ru">Функция 2</source>
+      <target xml:lang="en">Function 2</target>
     </trans-unit>
-    <trans-unit id="41656594">
-      <source xml:lang="ru">Устройство {0} найдено, {1}</source>
-      <target xml:lang="en">Device {0} found, {1}</target>
+    <trans-unit id="41656387">
+      <source xml:lang="ru">Функция 3</source>
+      <target xml:lang="en">Function 3</target>
     </trans-unit>
-    <trans-unit id="41656593">
-      <source xml:lang="ru">Устройство {0} открыто, {1}</source>
-      <target xml:lang="en">Device {0} open, {1}</target>
+    <trans-unit id="41656386">
+      <source xml:lang="ru">Функция 4</source>
+      <target xml:lang="en">Function 4</target>
     </trans-unit>
-    <trans-unit id="41656592">
-      <source xml:lang="ru">Устройство {0} отправило неверное значение = {1}</source>
-      <target xml:lang="en">Device {0} sent invalid value = {1}</target>
+    <trans-unit id="41656385">
+      <source xml:lang="ru">Функция 5</source>
+      <target xml:lang="en">Function 5</target>
     </trans-unit>
-    <trans-unit id="41656591">
-      <source xml:lang="ru">Устройство не подключено, abort, id = {0}/{1}</source>
-      <target xml:lang="en">Device not connected, abort, id = {0}/{1}</target>
+    <trans-unit id="41656384">
+      <source xml:lang="ru">Функция 6</source>
+      <target xml:lang="en">Function 6</target>
     </trans-unit>
-    <trans-unit id="41656590">
-      <source xml:lang="ru">Файл конфигурации</source>
-      <target xml:lang="en">The configuration file</target>
+    <trans-unit id="41656383">
+      <source xml:lang="ru">Функция 7</source>
+      <target xml:lang="en">Function 7</target>
     </trans-unit>
-    <trans-unit id="41656589">
-      <source xml:lang="ru">Файл конфигурации отсутствует или доступ запрещен, '{0}'</source>
-      <target xml:lang="en">Configuration file missing or access denied, '{0}'</target>
+    <trans-unit id="41656382">
+      <source xml:lang="ru">Функция 8</source>
+      <target xml:lang="en">Function 8</target>
     </trans-unit>
-    <trans-unit id="41656588">
-      <source xml:lang="ru">Файл конфигурации пуст, '{0}'</source>
-      <target xml:lang="en">Configuration file is empty, '{0}'</target>
+    <trans-unit id="41656381">
+      <source xml:lang="ru">Читать MIDI код..</source>
+      <target xml:lang="en">Read MIDI code..</target>
     </trans-unit>
-    <trans-unit id="41656587">
-      <source xml:lang="ru">Файл сертификата CA не существует, путь = '{0}'</source>
-      <target xml:lang="en">CA certificate file does not exist, path = '{0}'</target>
+    <trans-unit id="41656380">
+      <source xml:lang="ru">Энкодер</source>
+      <target xml:lang="en">Encoder</target>
     </trans-unit>
-    <trans-unit id="41656586">
-      <source xml:lang="ru">Эта ошибка не определена</source>
-      <target xml:lang="en">This error is undefined</target>
+    <trans-unit id="41656379">
+      <source xml:lang="ru">Энкодер (JOG)</source>
+      <target xml:lang="en">Encoder (JOG)</target>
     </trans-unit>
-    <trans-unit id="41656585">
-      <source xml:lang="ru">аудио соло (канал 1)</source>
-      <target xml:lang="en">audio solo (channel 1)</target>
+    <trans-unit id="41656378">
+      <source xml:lang="ru">Энкодер (покадровый просмотр)</source>
+      <target xml:lang="en">Encoder (frame-by-frame viewing)</target>
     </trans-unit>
-    <trans-unit id="41656584">
-      <source xml:lang="ru">аудио соло (канал 2)</source>
-      <target xml:lang="en">audio solo (channel 2)</target>
+    <trans-unit id="41656377">
+      <source xml:lang="ru">Энкодер с инверсией</source>
+      <target xml:lang="en">Encoder with inversion</target>
     </trans-unit>
-    <trans-unit id="41656583">
-      <source xml:lang="ru">аудио соло (канал 3)</source>
-      <target xml:lang="en">audio solo (channel 3)</target>
+    <trans-unit id="41656376">
+      <source xml:lang="ru">авто</source>
+      <target xml:lang="en">auto</target>
     </trans-unit>
-    <trans-unit id="41656582">
-      <source xml:lang="ru">аудио соло (канал 4)</source>
-      <target xml:lang="en">audio solo (channel 4)</target>
+    <trans-unit id="41656375">
+      <source xml:lang="ru">в конец</source>
+      <target xml:lang="en">In the end</target>
     </trans-unit>
-    <trans-unit id="41656581">
-      <source xml:lang="ru">аудио соло (канал 5)</source>
-      <target xml:lang="en">audio solo (channel 5)</target>
+    <trans-unit id="41656374">
+      <source xml:lang="ru">в начало</source>
+      <target xml:lang="en">to the begining</target>
     </trans-unit>
-    <trans-unit id="41656580">
-      <source xml:lang="ru">аудио соло (канал 6)</source>
-      <target xml:lang="en">audio solo (channel 6)</target>
-    </trans-unit>
-    <trans-unit id="41656579">
-      <source xml:lang="ru">аудио соло (канал 7)</source>
-      <target xml:lang="en">audio solo (channel 7)</target>
-    </trans-unit>
-    <trans-unit id="41656578">
-      <source xml:lang="ru">аудио соло (канал 8)</source>
-      <target xml:lang="en">audio solo (channel 8)</target>
-    </trans-unit>
-    <trans-unit id="41656577">
-      <source xml:lang="ru">аудио соло (канал 9)</source>
-      <target xml:lang="en">audio solo (channel 9)</target>
-    </trans-unit>
-    <trans-unit id="41656576">
-      <source xml:lang="ru">аудио соло (основной)</source>
-      <target xml:lang="en">audio solo (main)</target>
-    </trans-unit>
-    <trans-unit id="41656575">
+    <trans-unit id="41656373">
       <source xml:lang="ru">вкл/выкл 1</source>
       <target xml:lang="en">on/off 1</target>
     </trans-unit>
-    <trans-unit id="41656574">
+    <trans-unit id="41656372">
       <source xml:lang="ru">вкл/выкл 10</source>
       <target xml:lang="en">on/off 10</target>
     </trans-unit>
-    <trans-unit id="41656573">
+    <trans-unit id="41656371">
       <source xml:lang="ru">вкл/выкл 11</source>
       <target xml:lang="en">on/off 11</target>
     </trans-unit>
-    <trans-unit id="41656572">
+    <trans-unit id="41656370">
       <source xml:lang="ru">вкл/выкл 12</source>
       <target xml:lang="en">on/off 12</target>
     </trans-unit>
-    <trans-unit id="41656571">
+    <trans-unit id="41656369">
       <source xml:lang="ru">вкл/выкл 13</source>
       <target xml:lang="en">on/off 13</target>
     </trans-unit>
-    <trans-unit id="41656570">
+    <trans-unit id="41656368">
       <source xml:lang="ru">вкл/выкл 14</source>
       <target xml:lang="en">on/off 14</target>
     </trans-unit>
-    <trans-unit id="41656569">
+    <trans-unit id="41656367">
       <source xml:lang="ru">вкл/выкл 15</source>
       <target xml:lang="en">on/off 15</target>
     </trans-unit>
-    <trans-unit id="41656568">
+    <trans-unit id="41656366">
       <source xml:lang="ru">вкл/выкл 16</source>
       <target xml:lang="en">on/off 16</target>
     </trans-unit>
-    <trans-unit id="41656567">
+    <trans-unit id="41656365">
       <source xml:lang="ru">вкл/выкл 17</source>
       <target xml:lang="en">on/off 17</target>
     </trans-unit>
-    <trans-unit id="41656566">
+    <trans-unit id="41656364">
       <source xml:lang="ru">вкл/выкл 18</source>
       <target xml:lang="en">on/off 18</target>
     </trans-unit>
-    <trans-unit id="41656565">
+    <trans-unit id="41656363">
       <source xml:lang="ru">вкл/выкл 19</source>
       <target xml:lang="en">on/off 19</target>
     </trans-unit>
-    <trans-unit id="41656564">
+    <trans-unit id="41656362">
       <source xml:lang="ru">вкл/выкл 2</source>
       <target xml:lang="en">on/off 2</target>
     </trans-unit>
-    <trans-unit id="41656563">
+    <trans-unit id="41656361">
       <source xml:lang="ru">вкл/выкл 20</source>
       <target xml:lang="en">on/off 20</target>
     </trans-unit>
-    <trans-unit id="41656562">
+    <trans-unit id="41656360">
       <source xml:lang="ru">вкл/выкл 21</source>
       <target xml:lang="en">on/off 21</target>
     </trans-unit>
-    <trans-unit id="41656561">
+    <trans-unit id="41656359">
       <source xml:lang="ru">вкл/выкл 22</source>
       <target xml:lang="en">on/off 22</target>
     </trans-unit>
-    <trans-unit id="41656560">
+    <trans-unit id="41656358">
       <source xml:lang="ru">вкл/выкл 23</source>
       <target xml:lang="en">on/off 23</target>
     </trans-unit>
-    <trans-unit id="41656559">
+    <trans-unit id="41656357">
       <source xml:lang="ru">вкл/выкл 24</source>
       <target xml:lang="en">on/off 24</target>
     </trans-unit>
-    <trans-unit id="41656558">
+    <trans-unit id="41656356">
       <source xml:lang="ru">вкл/выкл 25</source>
       <target xml:lang="en">on/off 25</target>
     </trans-unit>
-    <trans-unit id="41656557">
+    <trans-unit id="41656355">
       <source xml:lang="ru">вкл/выкл 26</source>
       <target xml:lang="en">on/off 26</target>
     </trans-unit>
-    <trans-unit id="41656556">
+    <trans-unit id="41656354">
       <source xml:lang="ru">вкл/выкл 27</source>
       <target xml:lang="en">on/off 27</target>
     </trans-unit>
-    <trans-unit id="41656555">
+    <trans-unit id="41656353">
       <source xml:lang="ru">вкл/выкл 3</source>
       <target xml:lang="en">on/off 3</target>
     </trans-unit>
-    <trans-unit id="41656554">
+    <trans-unit id="41656352">
       <source xml:lang="ru">вкл/выкл 4</source>
       <target xml:lang="en">on/off 4</target>
     </trans-unit>
-    <trans-unit id="41656553">
+    <trans-unit id="41656351">
       <source xml:lang="ru">вкл/выкл 5</source>
       <target xml:lang="en">on/off 5</target>
     </trans-unit>
-    <trans-unit id="41656552">
+    <trans-unit id="41656350">
       <source xml:lang="ru">вкл/выкл 6</source>
       <target xml:lang="en">on/off 6</target>
     </trans-unit>
-    <trans-unit id="41656551">
+    <trans-unit id="41656349">
       <source xml:lang="ru">вкл/выкл 7</source>
       <target xml:lang="en">on/off 7</target>
     </trans-unit>
-    <trans-unit id="41656550">
+    <trans-unit id="41656348">
       <source xml:lang="ru">вкл/выкл 8</source>
       <target xml:lang="en">on/off 8</target>
     </trans-unit>
-    <trans-unit id="41656549">
+    <trans-unit id="41656347">
       <source xml:lang="ru">вкл/выкл 9</source>
       <target xml:lang="en">on/off 9</target>
     </trans-unit>
-    <trans-unit id="41656548">
-      <source xml:lang="ru">все сообщения</source>
-      <target xml:lang="en">all messages</target>
+    <trans-unit id="41656346">
+      <source xml:lang="ru">выход</source>
+      <target xml:lang="en">exit</target>
     </trans-unit>
-    <trans-unit id="41656547">
-      <source xml:lang="ru">выбор звука (канал 1)</source>
-      <target xml:lang="en">sound selection (channel 1)</target>
+    <trans-unit id="41656345">
+      <source xml:lang="ru">канал 1</source>
+      <target xml:lang="en">channel 1</target>
     </trans-unit>
-    <trans-unit id="41656546">
-      <source xml:lang="ru">выбор звука (канал 2)</source>
-      <target xml:lang="en">sound selection (channel 2)</target>
+    <trans-unit id="41656344">
+      <source xml:lang="ru">канал 10</source>
+      <target xml:lang="en">channel 10</target>
     </trans-unit>
-    <trans-unit id="41656545">
-      <source xml:lang="ru">выбор звука (канал 3)</source>
-      <target xml:lang="en">sound selection (channel 3)</target>
+    <trans-unit id="41656343">
+      <source xml:lang="ru">канал 11</source>
+      <target xml:lang="en">channel 11</target>
     </trans-unit>
-    <trans-unit id="41656544">
-      <source xml:lang="ru">выбор звука (канал 4)</source>
-      <target xml:lang="en">sound selection (channel 4)</target>
+    <trans-unit id="41656342">
+      <source xml:lang="ru">канал 12</source>
+      <target xml:lang="en">channel 12</target>
     </trans-unit>
-    <trans-unit id="41656543">
-      <source xml:lang="ru">выбор звука (канал 5)</source>
-      <target xml:lang="en">sound selection (channel 5)</target>
+    <trans-unit id="41656341">
+      <source xml:lang="ru">канал 13</source>
+      <target xml:lang="en">channel 13</target>
     </trans-unit>
-    <trans-unit id="41656542">
-      <source xml:lang="ru">выбор звука (канал 6)</source>
-      <target xml:lang="en">sound selection (channel 6)</target>
+    <trans-unit id="41656340">
+      <source xml:lang="ru">канал 14</source>
+      <target xml:lang="en">channel 14</target>
     </trans-unit>
-    <trans-unit id="41656541">
-      <source xml:lang="ru">выбор звука (канал 7)</source>
-      <target xml:lang="en">sound selection (channel 7)</target>
+    <trans-unit id="41656339">
+      <source xml:lang="ru">канал 15</source>
+      <target xml:lang="en">channel 15</target>
     </trans-unit>
-    <trans-unit id="41656540">
-      <source xml:lang="ru">выбор звука (канал 8)</source>
-      <target xml:lang="en">sound selection (channel 8)</target>
+    <trans-unit id="41656338">
+      <source xml:lang="ru">канал 16</source>
+      <target xml:lang="en">channel 16</target>
     </trans-unit>
-    <trans-unit id="41656539">
-      <source xml:lang="ru">выбор звука (канал 9)</source>
-      <target xml:lang="en">sound selection (channel 9)</target>
+    <trans-unit id="41656337">
+      <source xml:lang="ru">канал 17</source>
+      <target xml:lang="en">channel 17</target>
     </trans-unit>
-    <trans-unit id="41656538">
-      <source xml:lang="ru">громкость звука (канал 1)</source>
-      <target xml:lang="en">sound volume (channel 1)</target>
+    <trans-unit id="41656336">
+      <source xml:lang="ru">канал 18</source>
+      <target xml:lang="en">channel 18</target>
     </trans-unit>
-    <trans-unit id="41656537">
-      <source xml:lang="ru">громкость звука (канал 2)</source>
-      <target xml:lang="en">sound volume (channel 2)</target>
+    <trans-unit id="41656335">
+      <source xml:lang="ru">канал 2</source>
+      <target xml:lang="en">channel 2</target>
     </trans-unit>
-    <trans-unit id="41656536">
-      <source xml:lang="ru">громкость звука (канал 3)</source>
-      <target xml:lang="en">sound volume (channel 3)</target>
+    <trans-unit id="41656334">
+      <source xml:lang="ru">канал 3</source>
+      <target xml:lang="en">channel 3</target>
     </trans-unit>
-    <trans-unit id="41656535">
-      <source xml:lang="ru">громкость звука (канал 4)</source>
-      <target xml:lang="en">sound volume (channel 4)</target>
+    <trans-unit id="41656333">
+      <source xml:lang="ru">канал 4</source>
+      <target xml:lang="en">channel 4</target>
     </trans-unit>
-    <trans-unit id="41656534">
-      <source xml:lang="ru">громкость звука (канал 5)</source>
-      <target xml:lang="en">sound volume (channel 5)</target>
+    <trans-unit id="41656332">
+      <source xml:lang="ru">канал 5</source>
+      <target xml:lang="en">channel 5</target>
     </trans-unit>
-    <trans-unit id="41656533">
-      <source xml:lang="ru">громкость звука (канал 6)</source>
-      <target xml:lang="en">sound volume (channel 6)</target>
+    <trans-unit id="41656331">
+      <source xml:lang="ru">канал 6</source>
+      <target xml:lang="en">channel 6</target>
     </trans-unit>
-    <trans-unit id="41656532">
-      <source xml:lang="ru">громкость звука (канал 7)</source>
-      <target xml:lang="en">sound volume (channel 7)</target>
+    <trans-unit id="41656330">
+      <source xml:lang="ru">канал 7</source>
+      <target xml:lang="en">channel 7</target>
     </trans-unit>
-    <trans-unit id="41656531">
-      <source xml:lang="ru">громкость звука (канал 8)</source>
-      <target xml:lang="en">sound volume (channel 8)</target>
+    <trans-unit id="41656329">
+      <source xml:lang="ru">канал 8</source>
+      <target xml:lang="en">channel 8</target>
     </trans-unit>
-    <trans-unit id="41656530">
-      <source xml:lang="ru">громкость звука (канал 9)</source>
-      <target xml:lang="en">sound volume (channel 9)</target>
+    <trans-unit id="41656328">
+      <source xml:lang="ru">канал 9</source>
+      <target xml:lang="en">channel 9</target>
     </trans-unit>
-    <trans-unit id="41656529">
-      <source xml:lang="ru">громкость звука (основной)</source>
-      <target xml:lang="en">sound volume (main)</target>
+    <trans-unit id="41656327">
+      <source xml:lang="ru">конфигурация</source>
+      <target xml:lang="en">configuration</target>
     </trans-unit>
-    <trans-unit id="41656528">
-      <source xml:lang="ru">да</source>
-      <target xml:lang="en">Yes</target>
+    <trans-unit id="41656326">
+      <source xml:lang="ru">крупнее</source>
+      <target xml:lang="en">larger</target>
     </trans-unit>
-    <trans-unit id="41656527">
-      <source xml:lang="ru">действие не определено</source>
-      <target xml:lang="en">action not defined</target>
+    <trans-unit id="41656325">
+      <source xml:lang="ru">лог</source>
+      <target xml:lang="en">log</target>
     </trans-unit>
-    <trans-unit id="41656526">
-      <source xml:lang="ru">звуковой баланс (канал 1)</source>
-      <target xml:lang="en">sound balance (channel 1)</target>
+    <trans-unit id="41656324">
+      <source xml:lang="ru">мельче</source>
+      <target xml:lang="en">smaller</target>
     </trans-unit>
-    <trans-unit id="41656525">
-      <source xml:lang="ru">звуковой баланс (канал 2)</source>
-      <target xml:lang="en">sound balance (channel 2)</target>
+    <trans-unit id="41656323">
+      <source xml:lang="ru">очистить</source>
+      <target xml:lang="en">clear</target>
     </trans-unit>
-    <trans-unit id="41656524">
-      <source xml:lang="ru">звуковой баланс (канал 3)</source>
-      <target xml:lang="en">sound balance (channel 3)</target>
+    <trans-unit id="41656322">
+      <source xml:lang="ru">плагины</source>
+      <target xml:lang="en">plugins</target>
     </trans-unit>
-    <trans-unit id="41656523">
-      <source xml:lang="ru">звуковой баланс (канал 4)</source>
-      <target xml:lang="en">sound balance (channel 4)</target>
+    <trans-unit id="41656321">
+      <source xml:lang="ru">показать ArtNet конфигурацию</source>
+      <target xml:lang="en">show ArtNet configuration</target>
     </trans-unit>
-    <trans-unit id="41656522">
-      <source xml:lang="ru">звуковой баланс (канал 5)</source>
-      <target xml:lang="en">sound balance (channel 5)</target>
+    <trans-unit id="41656320">
+      <source xml:lang="ru">показать DMX512 конфигурацию</source>
+      <target xml:lang="en">show DMX512 configuration</target>
     </trans-unit>
-    <trans-unit id="41656521">
-      <source xml:lang="ru">звуковой баланс (канал 6)</source>
-      <target xml:lang="en">sound balance (channel 6)</target>
+    <trans-unit id="41656319">
+      <source xml:lang="ru">показать LIGTS конфигурацию</source>
+      <target xml:lang="en">show LIGTS configuration</target>
     </trans-unit>
-    <trans-unit id="41656520">
-      <source xml:lang="ru">звуковой баланс (канал 7)</source>
-      <target xml:lang="en">sound balance (channel 7)</target>
+    <trans-unit id="41656318">
+      <source xml:lang="ru">показать MIDI конфигурацию</source>
+      <target xml:lang="en">show MIDI configuration</target>
     </trans-unit>
-    <trans-unit id="41656519">
-      <source xml:lang="ru">звуковой баланс (канал 8)</source>
-      <target xml:lang="en">sound balance (channel 8)</target>
+    <trans-unit id="41656317">
+      <source xml:lang="ru">показать MMKEYS конфигурацию</source>
+      <target xml:lang="en">show MMKEYS configuration</target>
     </trans-unit>
-    <trans-unit id="41656518">
-      <source xml:lang="ru">звуковой баланс (канал 9)</source>
-      <target xml:lang="en">sound balance (channel 9)</target>
+    <trans-unit id="41656316">
+      <source xml:lang="ru">показать MQTT конфигурацию</source>
+      <target xml:lang="en">show MQTT configuration</target>
     </trans-unit>
-    <trans-unit id="41656517">
-      <source xml:lang="ru">звуковой баланс (основной)</source>
-      <target xml:lang="en">sound balance (basic)</target>
+    <trans-unit id="41656315">
+      <source xml:lang="ru">показать всю конфигурацию</source>
+      <target xml:lang="en">show all configuration</target>
     </trans-unit>
-    <trans-unit id="41656516">
-      <source xml:lang="ru">информация</source>
-      <target xml:lang="en">information</target>
+    <trans-unit id="41656314">
+      <source xml:lang="ru">помощь</source>
+      <target xml:lang="en">help</target>
     </trans-unit>
-    <trans-unit id="41656515">
-      <source xml:lang="ru">лог не ведется</source>
-      <target xml:lang="en">no log is kept</target>
+    <trans-unit id="41656313">
+      <source xml:lang="ru">сохранить настройки</source>
+      <target xml:lang="en">save settings</target>
     </trans-unit>
-    <trans-unit id="41656514">
-      <source xml:lang="ru">нет</source>
-      <target xml:lang="en">No</target>
+    <trans-unit id="41656312">
+      <source xml:lang="ru">старт</source>
+      <target xml:lang="en">start</target>
     </trans-unit>
-    <trans-unit id="41656513">
-      <source xml:lang="ru">отключение звука (канал 1)</source>
-      <target xml:lang="en">mute (channel 1)</target>
+    <trans-unit id="41656311">
+      <source xml:lang="ru">статистика плагинов</source>
+      <target xml:lang="en">plugin statistics</target>
     </trans-unit>
-    <trans-unit id="41656512">
-      <source xml:lang="ru">отключение звука (канал 2)</source>
-      <target xml:lang="en">mute (channel 2)</target>
+    <trans-unit id="41656310">
+      <source xml:lang="ru">стоп</source>
+      <target xml:lang="en">stop</target>
     </trans-unit>
-    <trans-unit id="41656511">
-      <source xml:lang="ru">отключение звука (канал 3)</source>
-      <target xml:lang="en">mute (channel 3)</target>
-    </trans-unit>
-    <trans-unit id="41656510">
-      <source xml:lang="ru">отключение звука (канал 4)</source>
-      <target xml:lang="en">mute (channel 4)</target>
-    </trans-unit>
-    <trans-unit id="41656509">
-      <source xml:lang="ru">отключение звука (канал 5)</source>
-      <target xml:lang="en">mute (channel 5)</target>
-    </trans-unit>
-    <trans-unit id="41656508">
-      <source xml:lang="ru">отключение звука (канал 6)</source>
-      <target xml:lang="en">mute (channel 6)</target>
-    </trans-unit>
-    <trans-unit id="41656507">
-      <source xml:lang="ru">отключение звука (канал 7)</source>
-      <target xml:lang="en">mute (channel 7)</target>
-    </trans-unit>
-    <trans-unit id="41656506">
-      <source xml:lang="ru">отключение звука (канал 8)</source>
-      <target xml:lang="en">mute (channel 8)</target>
-    </trans-unit>
-    <trans-unit id="41656505">
-      <source xml:lang="ru">отключение звука (канал 9)</source>
-      <target xml:lang="en">mute (channel 9)</target>
-    </trans-unit>
-    <trans-unit id="41656504">
-      <source xml:lang="ru">отключение звука (основной)</source>
-      <target xml:lang="en">mute (main)</target>
-    </trans-unit>
-    <trans-unit id="41656503">
-      <source xml:lang="ru">предупреждения</source>
-      <target xml:lang="en">warnings</target>
-    </trans-unit>
-    <trans-unit id="41656502">
-      <source xml:lang="ru">статус:</source>
-      <target xml:lang="en">status:</target>
-    </trans-unit>
-    <trans-unit id="41656501">
-      <source xml:lang="ru">только ошибки</source>
-      <target xml:lang="en">only errors</target>
-    </trans-unit>
-    <trans-unit id="41656500">
-      <source xml:lang="ru">транслятор остановлен:</source>
-      <target xml:lang="en">the translator is stopped:</target>
-    </trans-unit>
-    <trans-unit id="41656499">
-      <source xml:lang="ru">транслятор работает:</source>
-      <target xml:lang="en">the translator works:</target>
-    </trans-unit>
-    <trans-unit id="41656498">
-      <source xml:lang="ru">уведомления</source>
-      <target xml:lang="en">notifications</target>
-    </trans-unit>
-    <trans-unit id="41656497">
+    <trans-unit id="41656309">
       <source xml:lang="ru">уровень 1</source>
       <target xml:lang="en">level 1</target>
     </trans-unit>
-    <trans-unit id="41656496">
+    <trans-unit id="41656308">
       <source xml:lang="ru">уровень 10</source>
       <target xml:lang="en">level 10</target>
     </trans-unit>
-    <trans-unit id="41656495">
+    <trans-unit id="41656307">
       <source xml:lang="ru">уровень 11</source>
       <target xml:lang="en">level 11</target>
     </trans-unit>
-    <trans-unit id="41656494">
+    <trans-unit id="41656306">
       <source xml:lang="ru">уровень 12</source>
       <target xml:lang="en">level 12</target>
     </trans-unit>
-    <trans-unit id="41656493">
+    <trans-unit id="41656305">
       <source xml:lang="ru">уровень 13</source>
       <target xml:lang="en">level 13</target>
     </trans-unit>
-    <trans-unit id="41656492">
+    <trans-unit id="41656304">
       <source xml:lang="ru">уровень 14</source>
       <target xml:lang="en">level 14</target>
     </trans-unit>
-    <trans-unit id="41656491">
+    <trans-unit id="41656303">
       <source xml:lang="ru">уровень 15</source>
       <target xml:lang="en">level 15</target>
     </trans-unit>
-    <trans-unit id="41656490">
+    <trans-unit id="41656302">
       <source xml:lang="ru">уровень 16</source>
       <target xml:lang="en">level 16</target>
     </trans-unit>
-    <trans-unit id="41656489">
+    <trans-unit id="41656301">
       <source xml:lang="ru">уровень 17</source>
       <target xml:lang="en">level 17</target>
     </trans-unit>
-    <trans-unit id="41656488">
+    <trans-unit id="41656300">
       <source xml:lang="ru">уровень 18</source>
       <target xml:lang="en">level 18</target>
     </trans-unit>
-    <trans-unit id="41656487">
+    <trans-unit id="41656299">
       <source xml:lang="ru">уровень 2</source>
       <target xml:lang="en">level 2</target>
     </trans-unit>
-    <trans-unit id="41656486">
+    <trans-unit id="41656298">
       <source xml:lang="ru">уровень 3</source>
       <target xml:lang="en">level 3</target>
     </trans-unit>
-    <trans-unit id="41656485">
+    <trans-unit id="41656297">
       <source xml:lang="ru">уровень 4</source>
       <target xml:lang="en">level 4</target>
     </trans-unit>
-    <trans-unit id="41656484">
+    <trans-unit id="41656296">
       <source xml:lang="ru">уровень 5</source>
       <target xml:lang="en">level 5</target>
     </trans-unit>
-    <trans-unit id="41656483">
+    <trans-unit id="41656295">
       <source xml:lang="ru">уровень 6</source>
       <target xml:lang="en">level 6</target>
     </trans-unit>
-    <trans-unit id="41656482">
+    <trans-unit id="41656294">
       <source xml:lang="ru">уровень 7</source>
       <target xml:lang="en">level 7</target>
     </trans-unit>
-    <trans-unit id="41656481">
+    <trans-unit id="41656293">
       <source xml:lang="ru">уровень 8</source>
       <target xml:lang="en">level 8</target>
     </trans-unit>
-    <trans-unit id="41656480">
+    <trans-unit id="41656292">
       <source xml:lang="ru">уровень 9</source>
       <target xml:lang="en">level 9</target>
     </trans-unit>
-    <trans-unit id="41656479">
-      <source xml:lang="ru">функция F1 (стандартный режим)</source>
-      <target xml:lang="en">function F1 (standard mode)</target>
-    </trans-unit>
-    <trans-unit id="41656478">
-      <source xml:lang="ru">функция F1 (удерживаемый режим)</source>
-      <target xml:lang="en">function F1 (held mode)</target>
-    </trans-unit>
-    <trans-unit id="41656477">
-      <source xml:lang="ru">функция F2 (стандартный режим)</source>
-      <target xml:lang="en">function F2 (standard mode)</target>
-    </trans-unit>
-    <trans-unit id="41656476">
-      <source xml:lang="ru">функция F2 (удерживаемый режим)</source>
-      <target xml:lang="en">function F2 (held mode)</target>
-    </trans-unit>
-    <trans-unit id="41656475">
-      <source xml:lang="ru">функция F3 (стандартный режим)</source>
-      <target xml:lang="en">function F3 (standard mode)</target>
-    </trans-unit>
-    <trans-unit id="41656474">
-      <source xml:lang="ru">функция F3 (удерживаемый режим)</source>
-      <target xml:lang="en">function F3 (held mode)</target>
-    </trans-unit>
-    <trans-unit id="41656473">
-      <source xml:lang="ru">функция F4 (стандартный режим)</source>
-      <target xml:lang="en">function F4 (standard mode)</target>
-    </trans-unit>
-    <trans-unit id="41656472">
-      <source xml:lang="ru">функция F4 (удерживаемый режим)</source>
-      <target xml:lang="en">function F4 (held mode)</target>
-    </trans-unit>
-    <trans-unit id="41656471">
-      <source xml:lang="ru">функция F5 (стандартный режим)</source>
-      <target xml:lang="en">function F5 (standard mode)</target>
-    </trans-unit>
-    <trans-unit id="41656470">
-      <source xml:lang="ru">функция F5 (удерживаемый режим)</source>
-      <target xml:lang="en">function F5 (held mode)</target>
-    </trans-unit>
-    <trans-unit id="41656469">
-      <source xml:lang="ru">функция F6 (стандартный режим)</source>
-      <target xml:lang="en">function F6 (standard mode)</target>
-    </trans-unit>
-    <trans-unit id="41656468">
-      <source xml:lang="ru">функция F6 (удерживаемый режим)</source>
-      <target xml:lang="en">function F6 (held mode)</target>
-    </trans-unit>
-    <trans-unit id="41656467">
-      <source xml:lang="ru">функция F7 (стандартный режим)</source>
-      <target xml:lang="en">function F7 (standard mode)</target>
-    </trans-unit>
-    <trans-unit id="41656466">
-      <source xml:lang="ru">функция F7 (удерживаемый режим)</source>
-      <target xml:lang="en">function F7 (held mode)</target>
-    </trans-unit>
-    <trans-unit id="41656465">
-      <source xml:lang="ru">функция F8 (стандартный режим)</source>
-      <target xml:lang="en">function F8 (standard mode)</target>
-    </trans-unit>
-    <trans-unit id="41656464">
-      <source xml:lang="ru">функция F8 (удерживаемый режим)</source>
-      <target xml:lang="en">function F8 (held mode)</target>
+    <trans-unit id="41656291">
+      <source xml:lang="ru">язык</source>
+      <target xml:lang="en">language</target>
     </trans-unit>
    </body>
   </file>
