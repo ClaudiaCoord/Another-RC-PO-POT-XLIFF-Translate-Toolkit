@@ -161,6 +161,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\shared\h\global.h" />
+    <ClInclude Include="..\shared\h\Lang.h" />
     <ClInclude Include="..\shared\h\RCParser.h" />
     <ClInclude Include="..\shared\h\Xml.h" />
   </ItemGroup>
