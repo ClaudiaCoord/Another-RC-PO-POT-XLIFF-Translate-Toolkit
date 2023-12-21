@@ -7,11 +7,6 @@
 #pragma once
 
 using namespace std::string_view_literals;
-/*
-	Another RC/PO/POT/XLIFF Translate Toolkit.
-	(c) CC 2023, MIT
-	See README.md for more details.
-*/
 
 namespace info {
 

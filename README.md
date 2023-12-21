@@ -76,20 +76,48 @@ Conversion PO/POT to RC files
 Usage: po2rc.exe [options...]  
 Options:  
     -s, --langtemplate     RC template language, two chars: EN,RU..  
-    -l, --langoutput       Output language, two chars: EN,DE..  
-    -i, --langid           Output language Microsoft ID: LANG_* (Required)  
+    -l, --langoutput       Output language, two chars: EN,DE,de-DE.. (Required)
+    -i, --langid           Output language Microsoft ID: LANG_*, optional, absolute
     -n, --normalize        normalize translated text  
     -p, --poinput          PO input file, full path (Required)  
     -t, --template         RC input template file, full path (Required)  
-    -o, --output           RC output file, full path, or use -d option  
+    -o, --rcoutput         RC output file, full path, or use -d option  
     -d, --directory        RC output directory, required -s and -l options, full path, or use -o option  
     -e, --exclude          By default, exclude file it is in the directory of the executable, and name 'po2rc.exclude'  
     -h, --help             this help page..  
 
 	po2rc.exe -s RU -l ZU -i LANG_ZULU  
 		-p x:\path\to\file\resource.po -t x:\path\to\file\template.rc -d x:\path\output\directory  
-	po2rc.exe -i LANG_ZULU  
+	po2rc.exe -s RU -l ZU
+		-p x:\path\to\file\resource.po -t x:\path\to\file\template.rc -d x:\path\output\directory  
+	po2rc.exe -l ZU  
 		-p x:\path\to\file\resource.po -t x:\path\to\file\template.rc -o x:\path\output\resource.rc  
+
+```
+
+#### xlf2rc:  
+```
+Conversion XLIFF to RC files
+
+Usage: xlf2rc.exe [options...]
+Options:
+    -s, --langtemplate     RC template language, two chars: EN,RU..
+    -l, --langoutput       Output language, two chars: EN,DE,de-DE.. (Required)
+    -i, --langid           Output language Microsoft ID: LANG_*, optional, absolute
+    -n, --normalize        normalize translated text
+    -x, --xliffinput       XLIFF input file, full path (Required)
+    -t, --template         RC input template file, full path (Required)
+    -o, --rcoutput         RC output file, full path, or use -d option
+    -d, --directory        RC output directory, required -s and -l options, full path, or use -o option
+    -e, --exclude          By default, exclude file it is in the directory of the executable, and name 'xlf2rc.exclude'
+    -h, --help             this help page..       
+
+	xlf2rc.exe -s RU -l ZU -i LANG_ZULU
+		-x y:\path\to\file\resource.po -t x:\path\to\file\template.rc -d x:\path\output\directory
+	xlf2rc.exe -s RU -l ZU
+		-x y:\path\to\file\resource.po -t x:\path\to\file\template.rc -d x:\path\output\directory
+	xlf2rc.exe -l ZU
+		-x y:\path\to\file\resource.xlf -t x:\path\to\file\template.rc -o x:\path\output\resource.rc
 
 ```
 
@@ -114,7 +142,7 @@ Options:
 
 #### lang2id.exe:  
 ```
-Conversion string to Microsoft Languages ID  
+Conversion NLS string to Microsoft constant Languages ID
 
 Usage: lang2id.exe [options...]  
 Options:  
@@ -124,6 +152,21 @@ Options:
 	lang2id.exe German  
 	lang2id.exe DE  
 	lang2id.exe de-DE  
+
+```
+
+
+#### id2lang.exe:  
+```
+Conversion NLS string to Microsoft Language and Sub Language ID  
+
+Usage: id2lang.exe [options...]  
+Options:  
+    -h, --help             this help page..  
+
+	lang2id.exe DE
+	lang2id.exe de-DE
+	lang2id.exe de_DE  
 
 ```
 
@@ -144,12 +187,8 @@ Options:
     -h, --help             this help page..       
 
 	po2spell.exe -s
-		or:
-	po2spell.exe -l en-US -c 10
-		-p x:\path\to\file\resource.po
-		or:
-	po2spell.exe -l en-US -a
-		-p x:\path\to\file\resource.po
+	po2spell.exe -l en-US -c 10 -p x:\path\to\file\resource.po
+	po2spell.exe -l en-US -a -p x:\path\to\file\resource.po
 
 ```
 

@@ -50,6 +50,8 @@ typedef std::shared_ptr<config> CONFIG;
 
     class separators {
     public:
+        static constexpr wchar_t comma[] = L",";
+        static constexpr wchar_t dash[] = L"-";
         static constexpr wchar_t command[] = L"& ";
         static constexpr wchar_t valid[] = L" \t";
         static constexpr wchar_t text[] = L"\"";
@@ -199,13 +201,16 @@ typedef std::shared_ptr<config> CONFIG;
             return std::wstring(s.begin(), s.end());
         }
         static std::wstring po_header(std::wstring s, std::filesystem::path p) {
+            auto const t = std::chrono::current_zone()->to_local(std::chrono::system_clock::now());
             std::wstringstream ss{};
             ss << L"#. extracted from " << p.filename().wstring().c_str() << L"\n"
                 L"msgid \"\"\n"
                 L"msgstr \"\"\n"
-                L"\"Project-Id-Version: 9175\\n\"\n"
+                L"\"Project-Id-Version: \\n\"\n"
                 L"\"Report-Msgid-Bugs-To: \\n\"\n"
-                L"\"POT-Creation-Date: 2020-12-12 12:12+0000\\n\"\n"
+                L"\"POT-Creation-Date: "
+                << std::format(L"{:%Y-%m-%d}", t)
+                << L" 10:10+0000\\n\"\n"
                 L"\"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\\n\"\n"
                 L"\"Last-Translator: FULL NAME <EMAIL@ADDRESS>\\n\"\n"
                 L"\"Language-Team: LANGUAGE <LL@li.org>\\n\"\n"
@@ -213,7 +218,7 @@ typedef std::shared_ptr<config> CONFIG;
                 L"\"Content-Type: text/plain; charset=UTF-8\\n\"\n"
                 L"\"Content-Transfer-Encoding: 8bit\\n\"\n"
                 L"\"X-Accelerator-Marker: &\\n\"\n"
-                L"\"X-Generator: Translate " << s.c_str() << L" 1.0.0\\n\"\n"
+                L"\"X-Generator: Translate " << s.c_str() << L" 1.0.1\\n\"\n"
                 L"\"X-Merge-On: location\\n\"";
             return ss.str();
         }

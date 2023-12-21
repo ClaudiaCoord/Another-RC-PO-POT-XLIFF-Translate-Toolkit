@@ -2,7 +2,8 @@
     Another RC/PO/POT/XLIFF Translate Toolkit.
     (c) CC 2023, MIT
 
-    lang2id LANGUAGE NLS string to Microsoft constant Languages ID
+    id2lang LANGUAGE NLS string to Microsoft Language and Sub Language ID
+	Output: "LANG_*, SUBLANG_*"
 
 	Microsoft: Valid locale identifiers:
 	https://learn.microsoft.com/en-us/previous-versions/windows/desktop/indexsrv/valid-locale-identifiers
@@ -11,36 +12,20 @@
 */
 
 #include "global.h"
-
-struct LANGBASE {
-public:
-	const LANGID id;
-	std::wstring_view name;
-	LANGBASE(uint32_t i, const std::wstring_view s) : id(i), name(std::wstring_view(s)) {}
-};
-
-std::vector<LANGBASE*> base;
-
-void add(uint32_t id, const std::wstring_view s) {
-	base.push_back(new LANGBASE(id, s));
-}
+#include "Lang.h"
 
 void args_using() {
-	cw.print((std::wstringstream()
-		<< L"\n\t" << info::configinfo::File
-		<< L" LANG_GERMAN\n\t\tor:")
-	);
-	cw.print((std::wstringstream()
-		<< L"\n\t" << info::configinfo::File
-		<< L" German\n\t\tor:")
-	);
 	cw.print((std::wstringstream()
 		<< L"\n\t" << info::configinfo::File
 		<< L" DE\n\t\tor:")
 	);
 	cw.print((std::wstringstream()
 		<< L"\n\t" << info::configinfo::File
-		<< L" de-DE\n\n")
+		<< L" de-DE\n\t\tor:")
+	);
+	cw.print((std::wstringstream()
+		<< L"\n\t" << info::configinfo::File
+		<< L" de_DE\n\n")
 	);
 }
 
@@ -56,7 +41,7 @@ int wmain(int argc, const wchar_t* argv[]) {
 				args_using();
 				return 0;
 			}
-			if (args.exists(L"help") || (argc < 1)) {
+			if (args.exists(L"help") || (argc < 2)) {
 				cw.print(info::configinfo::header(true));
 				args.print_help();
 				args_using();
@@ -65,15 +50,9 @@ int wmain(int argc, const wchar_t* argv[]) {
 		}
 		auto s = std::wstring(argv[1]);
 		if (s.empty()) return 0;
-		
-		#include "lang2id.h"
 
-		for (auto a : base) {
-			if (a->name._Equal(s)) {
-				std::wcout << std::setw(8) << std::setfill(L'0') << (uint32_t)a->id;
-				return 0;
-			}
-		}
+		LANG::Langid lang{};
+		std::wcout << lang.find(s);
 	}
 	catch (...) {
 		cw.print_exception(std::current_exception(), __FUNCTIONW__);

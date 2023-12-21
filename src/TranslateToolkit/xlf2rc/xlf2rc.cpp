@@ -9,6 +9,7 @@
 
 #include "global.h"
 #include "RCParser.h"
+#include "Xml.h"
 #include "Lang.h"
 
     class config : public info::configinfo {
@@ -18,7 +19,7 @@
         std::wstring lang_out{};
         std::wstring lang_id{};
 
-        std::filesystem::path path_po{};
+        std::filesystem::path path_xlf{};
         std::filesystem::path path_out{};
         std::filesystem::path path_tmpl{};
         std::filesystem::path path_exclude{};
@@ -39,7 +40,7 @@
 
             if (args.exists(L"e")) path_exclude = std::filesystem::path(args.get<std::wstring>(L"e"));
             if (args.exists(L"t")) path_tmpl = std::filesystem::path(args.get<std::wstring>(L"t"));
-            if (args.exists(L"p")) path_po = std::filesystem::path(args.get<std::wstring>(L"p"));
+            if (args.exists(L"x")) path_xlf = std::filesystem::path(args.get<std::wstring>(L"x"));
 
             is_normalize = args.exists(L"n");
 
@@ -63,13 +64,13 @@
                 } else path_out.append(out_);
             } else path_out = std::filesystem::path(s);
 
-            if (!std::filesystem::exists(path_po)) path_po = std::filesystem::path();
+            if (!std::filesystem::exists(path_xlf)) path_xlf = std::filesystem::path();
             if (!std::filesystem::exists(path_tmpl)) path_tmpl = std::filesystem::path();
             if (!std::filesystem::exists(path_out.root_directory())) path_out = std::filesystem::path();
         }
 
         const bool empty() {
-            return path_tmpl.empty() || path_po.empty() || path_out.empty() || lang_id.empty();
+            return path_tmpl.empty() || path_xlf.empty() || path_out.empty() || lang_id.empty();
         }
     };
 
@@ -90,46 +91,32 @@
         const bool parse() {
             try {
 
-                /* parse POT file */
+                /* parse XLIFF file */
                 {
-                    std::wifstream fpot(config_->path_po.wstring(), std::ios::in | std::ios::binary);
-                    if (!fpot.is_open())
-                        throw std::runtime_error("error open PO file");
+                    std::wifstream fxlf(config_->path_xlf.wstring(), std::ios::in | std::ios::binary);
+                    if (!fxlf.is_open())
+                        throw std::runtime_error("error open XLIFF file");
 
-                    fpot.imbue(std::locale(".utf-8"));
+                    fxlf.imbue(std::locale(".utf-8"));
                     {
-                        std::wstring line{};
-                        std::wstring line1{};
-                        std::wstring line2{};
-                        while (std::getline(fpot, line)) {
-                            if (line.empty() || (line.at(0) != L'm')) continue;
+                        xml::Xml root{};
+                        root.load<std::filesystem::path>(config_->path_xlf);
+                        xml::Xml& f = root[L"file"];
+                        xml::Xml& b = f[L"body"];
 
-                            size_t b = line.find_first_of(L'"');
-                            if (b == std::wstring::npos) continue;
-                            size_t e = line.find_last_of(L'"');
-                            if (e == std::wstring::npos) continue;
+                        for (xml::Xml::xiterator i = b.begin(); i != b.end(); i++) {
 
-                            std::wstring msgstr = line.substr((b + 1), (e - b - 1));
-                            if (msgstr.empty()) continue;
-
-                            if (line.starts_with(L"msgid")) {
-                                line1 = msgstr;
-                                line2 = L"";
-                                continue;
-                            }
-                            if (line.starts_with(L"msgstr"))
-                                line2 = msgstr;
-
-                            if (!line1.empty() && !line2.empty()) {
-                                parser_.add_dictionary(line1, line2);
-                                line1 = line2 = L"";
+                            if (i->name()._Equal(L"trans-unit")) {
+                                xml::Xml& a = *static_cast<xml::Xml*>(&*i);
+                                parser_.add_dictionary(a[L"source"].text(), utils::po_normalize(a[L"target"].text()));
                             }
                         }
+                        root.clear();
                     }
-                    fpot.close();
+                    fxlf.close();
 
                     if (parser_.empty_dictionary())
-                        throw std::runtime_error("error, PO dictionary empty");
+                        throw std::runtime_error("error, XLIFF dictionary empty");
                 }
 
                 stream_in_.open(config_->path_tmpl.wstring(), std::ios::in | std::ios::binary);
@@ -179,11 +166,11 @@
 void args_using() {
     cw.print((std::wstringstream()
         << L"\n\t" << info::configinfo::File
-        << L" -s RU -l ZU -i LANG_ZULU\n\t\t-p x:\\path\\to\\file\\resource.po -t x:\\path\\to\\file\\template.rc -d x:\\path\\output\\directory\n\t\tor:")
+        << L" -s RU -l ZU -i LANG_ZULU\n\t\t-x y:\\path\\to\\file\\resource.po -t x:\\path\\to\\file\\template.rc -d x:\\path\\output\\directory\n\t\tor:")
     );
     cw.print((std::wstringstream()
         << L"\n\t" << info::configinfo::File
-        << L" -l ZU\n\t\t-p x:\\path\\to\\file\\resource.po -t x:\\path\\to\\file\\template.rc -o x:\\path\\output\\resource.rc\n\n")
+        << L" -l ZU\n\t\t-x y:\\path\\to\\file\\resource.xlf -t x:\\path\\to\\file\\template.rc -o x:\\path\\output\\resource.rc\n\n")
     );
 }
 
@@ -203,14 +190,14 @@ int wmain(int argc, const wchar_t* argv[]) {
             args.add_argument()
                 .names({ L"-i", L"--langid" })
                 .description(L"Output language Microsoft ID: LANG_*, optional, absolute");
-                
+
             args.add_argument()
                 .names({ L"-n", L"--normalize" })
                 .description(L"normalize translated text");
 
             args.add_argument()
-                .names({ L"-p", L"--poinput" })
-                .description(L"PO input file, full path")
+                .names({ L"-x", L"--xliffinput" })
+                .description(L"XLIFF input file, full path")
                 .required(true);
             args.add_argument()
                 .names({ L"-t", L"--template" })
@@ -225,7 +212,7 @@ int wmain(int argc, const wchar_t* argv[]) {
                 .description(L"RC output directory, required -s and -l options, full path, or use -o option");
             args.add_argument()
                 .names({ L"-e", L"--exclude" })
-                .description(L"By default, exclude file it is in the directory of the executable, and name 'po2rc.exclude'");
+                .description(L"By default, exclude file it is in the directory of the executable, and name 'xlf2rc.exclude'");
 
             args.enable_help();
 
@@ -253,7 +240,7 @@ int wmain(int argc, const wchar_t* argv[]) {
        }
 
         cw.print((std::wstringstream()
-            << L"\n\t* Process file: " << cnf->path_po.filename().wstring()
+            << L"\n\t* Process file: " << cnf->path_xlf.filename().wstring()
             << L", template: " << cnf->lang_tmpl
             << L", to language: " << cnf->lang_out
             << L", normalize: " << std::boolalpha << cnf->is_normalize << L"\n")

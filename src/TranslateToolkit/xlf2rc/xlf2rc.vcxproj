@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{A40EEE22-29D5-4E78-B4FA-8320A0AFFCDC}</ProjectGuid>
+    <ProjectGuid>{B1A5530A-B433-4767-8A9B-5D29EE531496}</ProjectGuid>
     <RootNamespace>TranslateToolkit</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -155,11 +155,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="po2rc.cpp" />
+    <ClCompile Include="..\shared\cpp\Xml.cpp" />
+    <ClCompile Include="..\shared\cpp\XmlParser.cpp" />
+    <ClCompile Include="xlf2rc.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\shared\h\global.h" />
     <ClInclude Include="..\shared\h\RCParser.h" />
+    <ClInclude Include="..\shared\h\Xml.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\shared\rc\resource_exe.rc" />
