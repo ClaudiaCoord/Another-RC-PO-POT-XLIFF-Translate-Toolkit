@@ -4,15 +4,15 @@
 
 # Management RC/PO/POT/XLIFF languages files - Translate Toolkit
 
-- [rc2pot](?tab=readme-ov-file#rc2pot.exe)  Conversion RC to PO/POT files  
-- [po2rc](?tab=readme-ov-file#po2rc.exe)  Conversion PO/POT to RC files  
-- [xlf2rc](?tab=readme-ov-file#xlf2rc)  Conversion XLIFF to RC files
-- [xlf2po](?tab=readme-ov-file#xlf2po.exe)  Conversion XLIFF to PO/POT files  
-- [lang2id](?tab=readme-ov-file#lang2id.exe)  Conversion NLS string to Microsoft constant Languages ID
-- [id2lang](?tab=readme-ov-file#id2lang.exe)  Conversion NLS string to Microsoft Language and Sub Language ID  
-- [po2diff](?tab=readme-ov-file#po2diff.exe)  Different PO/POT files  
-- [diff2xlf](?tab=readme-ov-file#diff2xlf.exe)  Different XLIFF source file to append XLIFF destination file  
-- [po2spell](?tab=readme-ov-file#po2spell.exe)  Spelling Checker PO/POT files  
+- [rc2pot](?tab=readme-ov-file#rc2potexe)  Conversion RC to PO/POT files  
+- [po2rc](?tab=readme-ov-file#po2rcexe)  Conversion PO/POT to RC files  
+- [xlf2rc](?tab=readme-ov-file#xlf2rcexe)  Conversion XLIFF to RC files
+- [xlf2po](?tab=readme-ov-file#xlf2poexe)  Conversion XLIFF to PO/POT files  
+- [lang2id](?tab=readme-ov-file#lang2idexe)  Conversion NLS string to Microsoft constant Languages ID
+- [id2lang](?tab=readme-ov-file#id2langexe)  Conversion NLS string to Microsoft Language and Sub Language ID  
+- [po2diff](?tab=readme-ov-file#po2diffexe)  Different PO/POT files  
+- [diff2xlf](?tab=readme-ov-file#diff2xlfexe)  Different XLIFF source file to append XLIFF destination file  
+- [po2spell](?tab=readme-ov-file#po2spellexe)  Spelling Checker PO/POT files  
 
 ### Project philosophy
 
@@ -105,7 +105,7 @@ Options:
 
 ```
 
-#### xlf2rc:  
+#### xlf2rc.exe:  
 ```
 Conversion XLIFF to RC files
 
