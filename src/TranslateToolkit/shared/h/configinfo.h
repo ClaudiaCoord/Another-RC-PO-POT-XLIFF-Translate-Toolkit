@@ -10,9 +10,12 @@ using namespace std::string_view_literals;
 
 namespace info {
 
+	#include "..\rc\resource_exe.h"
 	#include "app_info.h"
 	#define SW__(A) L ## A ## sv
 	#define SW_(A) SW__(A)
+	#define W__(A) L ## A
+	#define W_(A) W__(A)
 
 	class configinfo {
 	protected:
@@ -24,6 +27,11 @@ namespace info {
 		static constexpr std::wstring_view File = SW_(FILE_NAME);
 		static constexpr std::wstring_view Title = SW_(FILE_DESC);
 		static constexpr std::wstring_view Product = SW_(FILE_PRODUCT);
+		#if defined (_WIN64)
+		static constexpr std::wstring_view Platform = L"x64"sv;
+		#else
+		static constexpr std::wstring_view Platform = L"x86"sv;
+		#endif
 
 		configinfo() = default;
 		virtual ~configinfo() = default;
@@ -44,7 +52,7 @@ namespace info {
 			return (std::wstringstream()
 				<< info::configinfo::Product << L"\n"
 				<< info::configinfo::Title << (b ? L"\n" : L"")
-				<< (b ? info::configinfo::Cc : L"")
+				<< (b ? std::format(L"{0} {1} MIT, Version: {2} {3}", info::configinfo::Cc, W_(__DATE__) + 7, W_(VER_TEXT), info::configinfo::Platform) : L"")
 				<< L"\n\n").str();
 		}
 

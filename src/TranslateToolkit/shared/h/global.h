@@ -57,6 +57,8 @@ typedef std::shared_ptr<config> CONFIG;
         static constexpr wchar_t text[] = L"\"";
         static constexpr wchar_t end[] = L"\r\n";
         static constexpr wchar_t all[] = L" \t\v\f\r\n";
+        static constexpr wchar_t xliff_body_begin[] = L"<body>";
+        static constexpr wchar_t xliff_body_end[] = L"</body>";
     };
 
     class console_writer {

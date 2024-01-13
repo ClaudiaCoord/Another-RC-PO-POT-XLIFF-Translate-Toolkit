@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2">
+  <file original="Translate/translate/MIDIMT_FORMxDA.po" source-language="ru" target-language="da">
+   <body>
+    <trans-unit id="41311622">
+      <source xml:lang="ru">Закрыть</source>
+      <target xml:lang="da">Tæt</target>
+    </trans-unit>
+    <trans-unit id="41311621">
+      <source xml:lang="ru">О программе..</source>
+      <target xml:lang="da">Om programmet..</target>
+    </trans-unit>
+    <trans-unit id="41311620">
+      <source xml:lang="ru">Перезагрузить модули</source>
+      <target xml:lang="da">Genindlæs moduler</target>
+    </trans-unit>
+    <trans-unit id="41311619">
+      <source xml:lang="ru">Программа настройки MIDI панели</source>
+      <target xml:lang="da"> MIDI-panelopsætningsprogram</target>
+    </trans-unit>
+    <trans-unit id="41311618">
+      <source xml:lang="ru">Сохранить настройки</source>
+      <target xml:lang="da">Gem indstillinger</target>
+    </trans-unit>
+    <trans-unit id="41311617">
+      <source xml:lang="ru">Старт</source>
+      <target xml:lang="da">Start</target>
+    </trans-unit>
+    <trans-unit id="41311616">
+      <source xml:lang="ru">Установить Virtual MIDI драйвер</source>
+      <target xml:lang="da">Installer Virtual MIDI-driver</target>
+    </trans-unit>
+    <trans-unit id="41311615">
+      <source xml:lang="ru">ArtNet сеть:</source>
+      <target xml:lang="da">ArtNet netværk:</target>
+    </trans-unit>
+    <trans-unit id="41311614">
+      <source xml:lang="ru">CA сертификат</source>
+      <target xml:lang="da">CA certifikat</target>
+    </trans-unit>
+    <trans-unit id="41311613">
+      <source xml:lang="ru">COM порт:</source>
+      <target xml:lang="da">COM port:</target>
+    </trans-unit>
+    <trans-unit id="41311612">
+      <source xml:lang="ru">IN/OUT Бридж</source>
+      <target xml:lang="da">IN/OUT bro</target>
+    </trans-unit>
+    <trans-unit id="41311611">
+      <source xml:lang="ru">IP адрес:</source>
+      <target xml:lang="da">IP-adresse:</target>
+    </trans-unit>
+    <trans-unit id="41311610">
+      <source xml:lang="ru">JOG фильтр сцены</source>
+      <target xml:lang="da">JOG scenefilter</target>
+    </trans-unit>
+    <trans-unit id="41311609">
+      <source xml:lang="ru">MIDI Прокси</source>
+      <target xml:lang="da">MIDI proxy</target>
+    </trans-unit>
+    <trans-unit id="41311608">
+      <source xml:lang="ru">MIDI драйвер</source>
+      <target xml:lang="da">MIDI driver</target>
+    </trans-unit>
+    <trans-unit id="41311607">
+      <source xml:lang="ru">MIDI контролы</source>
+      <target xml:lang="da">MIDI kontrol</target>
+    </trans-unit>
+    <trans-unit id="41311606">
+      <source xml:lang="ru">MIDI устройства</source>
+      <target xml:lang="da">MIDI-enheder</target>
+    </trans-unit>
+    <trans-unit id="41311605">
+      <source xml:lang="ru">MQTT сервер</source>
+      <target xml:lang="da">MQTT server</target>
+    </trans-unit>
+    <trans-unit id="41311604">
+      <source xml:lang="ru">MQTT топик префикс: (необязательно)</source>
+      <target xml:lang="da">MQTT-emnepræfiks: (valgfrit)</target>
+    </trans-unit>
+    <trans-unit id="41311603">
+      <source xml:lang="ru">SSL/TLS включено</source>
+      <target xml:lang="da">SSL/TLS aktiveret</target>
+    </trans-unit>
+    <trans-unit id="41311602">
+      <source xml:lang="ru">Авто старт при запуске</source>
+      <target xml:lang="da">Autostart ved opstart</target>
+    </trans-unit>
+    <trans-unit id="41311601">
+      <source xml:lang="ru">Авто старт этой конфигурации</source>
+      <target xml:lang="da">Autostart af denne konfiguration</target>
+    </trans-unit>
+    <trans-unit id="41311600">
+      <source xml:lang="ru">Адрес:</source>
+      <target xml:lang="da">Adresse:</target>
+    </trans-unit>
+    <trans-unit id="41311599">
+      <source xml:lang="ru">Базовая тема</source>
+      <target xml:lang="da">Grundlæggende tema</target>
+    </trans-unit>
+    <trans-unit id="41311598">
+      <source xml:lang="ru">Безопасность</source>
+      <target xml:lang="da">Sikkerhed</target>
+    </trans-unit>
+    <trans-unit id="41311597">
+      <source xml:lang="ru">Бит-рейт:</source>
+      <target xml:lang="da">Bithastighed:</target>
+    </trans-unit>
+    <trans-unit id="41311596">
+      <source xml:lang="ru">Броадкаст:</source>
+      <target xml:lang="da">Udsende:</target>
+    </trans-unit>
+    <trans-unit id="41311595">
+      <source xml:lang="ru">Включено</source>
+      <target xml:lang="da">Inkluderet</target>
+    </trans-unit>
+    <trans-unit id="41311594">
+      <source xml:lang="ru">Включить DMX пул (стандартное поведение)</source>
+      <target xml:lang="da">Aktiver DMX-pool (standardadfærd)</target>
+    </trans-unit>
+    <trans-unit id="41311593">
+      <source xml:lang="ru">Все</source>
+      <target xml:lang="da">Alle</target>
+    </trans-unit>
+    <trans-unit id="41311592">
+      <source xml:lang="ru">Входные</source>
+      <target xml:lang="da">Input</target>
+    </trans-unit>
+    <trans-unit id="41311591">
+      <source xml:lang="ru">Выходной порт не создается</source>
+      <target xml:lang="da">Der oprettes ingen udgangsport</target>
+    </trans-unit>
+    <trans-unit id="41311590">
+      <source xml:lang="ru">Выходные</source>
+      <target xml:lang="da">Weekend</target>
+    </trans-unit>
+    <trans-unit id="41311589">
+      <source xml:lang="ru">Драйвер:</source>
+      <target xml:lang="da">Chauffør:</target>
+    </trans-unit>
+    <trans-unit id="41311588">
+      <source xml:lang="ru">Замена значений громкости без проверки</source>
+      <target xml:lang="da">Udskiftning af volumenværdier uden at kontrollere</target>
+    </trans-unit>
+    <trans-unit id="41311587">
+      <source xml:lang="ru">Записывать лог</source>
+      <target xml:lang="da">Skriv log</target>
+    </trans-unit>
+    <trans-unit id="41311586">
+      <source xml:lang="ru">Запуск</source>
+      <target xml:lang="da">Lancering</target>
+    </trans-unit>
+    <trans-unit id="41311585">
+      <source xml:lang="ru">Запуск MIDI-MT</source>
+      <target xml:lang="da">Starter MIDI-MT</target>
+    </trans-unit>
+    <trans-unit id="41311584">
+      <source xml:lang="ru">Запущен</source>
+      <target xml:lang="da">Lanceret</target>
+    </trans-unit>
+    <trans-unit id="41311583">
+      <source xml:lang="ru">Интервал как долгое нажатие</source>
+      <target xml:lang="da">Interval som et langt tryk</target>
+    </trans-unit>
+    <trans-unit id="41311582">
+      <source xml:lang="ru">Интервал между нажатиями</source>
+      <target xml:lang="da">Interval mellem klik</target>
+    </trans-unit>
+    <trans-unit id="41311581">
+      <source xml:lang="ru">Информация</source>
+      <target xml:lang="da">Information</target>
+    </trans-unit>
+    <trans-unit id="41311580">
+      <source xml:lang="ru">Использовать правую кнопку мыши для вызова микшера</source>
+      <target xml:lang="da">Brug højre museknap for at få mixeren frem</target>
+    </trans-unit>
+    <trans-unit id="41311579">
+      <source xml:lang="ru">Кнопки</source>
+      <target xml:lang="da">Knapper</target>
+    </trans-unit>
+    <trans-unit id="41311578">
+      <source xml:lang="ru">Контрол:</source>
+      <target xml:lang="da">Styring:</target>
+    </trans-unit>
+    <trans-unit id="41311577">
+      <source xml:lang="ru">Конфигурация</source>
+      <target xml:lang="da">Konfiguration</target>
+    </trans-unit>
+    <trans-unit id="41311576">
+      <source xml:lang="ru">Маска:</source>
+      <target xml:lang="da">Maske:</target>
+    </trans-unit>
+    <trans-unit id="41311575">
+      <source xml:lang="ru">Метро</source>
+      <target xml:lang="da">Metro</target>
+    </trans-unit>
+    <trans-unit id="41311574">
+      <source xml:lang="ru">Модуль</source>
+      <target xml:lang="da">modul</target>
+    </trans-unit>
+    <trans-unit id="41311573">
+      <source xml:lang="ru">Монитор MIDI команд</source>
+      <target xml:lang="da">MIDI kommando monitor</target>
+    </trans-unit>
+    <trans-unit id="41311572">
+      <source xml:lang="ru">Монитор MIDI команд поможет вам определить как настроен контроллер. Для начала тестирования нажмите кнопку 'Старт'. Используя различные элементы управления на своем кортроллере, вы будете получать сообщения о сцене, номере и текущем значении.</source>
+      <target xml:lang="da">MIDI Command Monitor hjælper dig med at bestemme, hvordan controlleren er konfigureret. For at starte testen skal du klikke på knappen 'Start'. Ved at bruge de forskellige kontroller på din controller, vil du modtage beskeder om scenen, nummeret og den aktuelle værdi.</target>
+    </trans-unit>
+    <trans-unit id="41311571">
+      <source xml:lang="ru">Монитор команд</source>
+      <target xml:lang="da">Kommando Monitor</target>
+    </trans-unit>
+    <trans-unit id="41311570">
+      <source xml:lang="ru">Мультимедиа</source>
+      <target xml:lang="da">Multimedier</target>
+    </trans-unit>
+    <trans-unit id="41311569">
+      <source xml:lang="ru">Мультимедиа клавиатура</source>
+      <target xml:lang="da">Multimedie tastatur</target>
+    </trans-unit>
+    <trans-unit id="41311568">
+      <source xml:lang="ru">Назначение (долгий клик):</source>
+      <target xml:lang="da">Formål (langt klik):</target>
+    </trans-unit>
+    <trans-unit id="41311567">
+      <source xml:lang="ru">Назначение:</source>
+      <target xml:lang="da">Formål:</target>
+    </trans-unit>
+    <trans-unit id="41311566">
+      <source xml:lang="ru">Настройка MIDI контролов</source>
+      <target xml:lang="da">Opsætning af MIDI-kontroller</target>
+    </trans-unit>
+    <trans-unit id="41311565">
+      <source xml:lang="ru">Настройка модулей</source>
+      <target xml:lang="da">Opsætning af moduler</target>
+    </trans-unit>
+    <trans-unit id="41311564">
+      <source xml:lang="ru">Настройка пользовательской темы</source>
+      <target xml:lang="da">Opsætning af et brugerdefineret tema</target>
+    </trans-unit>
+    <trans-unit id="41311563">
+      <source xml:lang="ru">Настройка управления MIDI</source>
+      <target xml:lang="da">Opsætning af MIDI-kontrol</target>
+    </trans-unit>
+    <trans-unit id="41311562">
+      <source xml:lang="ru">Настройки MIDI</source>
+      <target xml:lang="da">MIDI-indstillinger</target>
+    </trans-unit>
+    <trans-unit id="41311561">
+      <source xml:lang="ru">Настройки Микшера Звука</source>
+      <target xml:lang="da">Indstillinger for lydmixer</target>
+    </trans-unit>
+    <trans-unit id="41311560">
+      <source xml:lang="ru">Номер вселенной:</source>
+      <target xml:lang="da">Univers nummer:</target>
+    </trans-unit>
+    <trans-unit id="41311559">
+      <source xml:lang="ru">Обновления</source>
+      <target xml:lang="da">Opdateringer</target>
+    </trans-unit>
+    <trans-unit id="41311558">
+      <source xml:lang="ru">Объединять приложения по названию, раздельная регулировка невозможна</source>
+      <target xml:lang="da">Kombiner applikationer efter navn; separate justeringer er ikke mulige</target>
+    </trans-unit>
+    <trans-unit id="41311557">
+      <source xml:lang="ru">Описание модуля</source>
+      <target xml:lang="da">Modulbeskrivelse</target>
+    </trans-unit>
+    <trans-unit id="41311556">
+      <source xml:lang="ru">Опции</source>
+      <target xml:lang="da">Muligheder</target>
+    </trans-unit>
+    <trans-unit id="41311555">
+      <source xml:lang="ru">Освещение</source>
+      <target xml:lang="da">Belysning</target>
+    </trans-unit>
+    <trans-unit id="41311554">
+      <source xml:lang="ru">Остановлен</source>
+      <target xml:lang="da">Holdt op</target>
+    </trans-unit>
+    <trans-unit id="41311553">
+      <source xml:lang="ru">Открыть файл конфигурации</source>
+      <target xml:lang="da">Åbn konfigurationsfilen</target>
+    </trans-unit>
+    <trans-unit id="41311552">
+      <source xml:lang="ru">Очи&стить</source>
+      <target xml:lang="da">Rens</target>
+    </trans-unit>
+    <trans-unit id="41311551">
+      <source xml:lang="ru">Подсказки</source>
+      <target xml:lang="da">Tips</target>
+    </trans-unit>
+    <trans-unit id="41311550">
+      <source xml:lang="ru">Помощь</source>
+      <target xml:lang="da">Hjælp</target>
+    </trans-unit>
+    <trans-unit id="41311549">
+      <source xml:lang="ru">Порт:</source>
+      <target xml:lang="da">Havn:</target>
+    </trans-unit>
+    <trans-unit id="41311548">
+      <source xml:lang="ru">Предпочитаемый язык:</source>
+      <target xml:lang="da">Foretrukne sprog:</target>
+    </trans-unit>
+    <trans-unit id="41311547">
+      <source xml:lang="ru">Просмотр лог-файла</source>
+      <target xml:lang="da">Se logfilen</target>
+    </trans-unit>
+    <trans-unit id="41311546">
+      <source xml:lang="ru">Регулируемые микшером приложения:</source>
+      <target xml:lang="da">Anvendelser styret af mixeren:</target>
+    </trans-unit>
+    <trans-unit id="41311545">
+      <source xml:lang="ru">Рекомендуемая раскладка MIDI панели управления. Файл с настройками этой раскладки находиться в папке 'docs/MIDIMT.Ctrl_data'</source>
+      <target xml:lang="da">Anbefalet MIDI kontrolpanel layout. Filen med indstillingerne for dette layout er placeret i mappen 'docs/MIDIMT.Ctrl_data'</target>
+    </trans-unit>
+    <trans-unit id="41311544">
+      <source xml:lang="ru">Рэтро</source>
+      <target xml:lang="da">Retro</target>
+    </trans-unit>
+    <trans-unit id="41311543">
+      <source xml:lang="ru">Светлая</source>
+      <target xml:lang="da">Lys</target>
+    </trans-unit>
+    <trans-unit id="41311542">
+      <source xml:lang="ru">Слайдеры</source>
+      <target xml:lang="da">Skydere</target>
+    </trans-unit>
+    <trans-unit id="41311541">
+      <source xml:lang="ru">Служба ArtNet</source>
+      <target xml:lang="da">ArtNet Service</target>
+    </trans-unit>
+    <trans-unit id="41311540">
+      <source xml:lang="ru">Служба DMX</source>
+      <target xml:lang="da">DMX service</target>
+    </trans-unit>
+    <trans-unit id="41311539">
+      <source xml:lang="ru">Современный</source>
+      <target xml:lang="da">Moderne</target>
+    </trans-unit>
+    <trans-unit id="41311538">
+      <source xml:lang="ru">Сохранить настройки</source>
+      <target xml:lang="da">Gem indstillinger</target>
+    </trans-unit>
+    <trans-unit id="41311537">
+      <source xml:lang="ru">Старт</source>
+      <target xml:lang="da">Start</target>
+    </trans-unit>
+    <trans-unit id="41311536">
+      <source xml:lang="ru">Стоп</source>
+      <target xml:lang="da">Hold op</target>
+    </trans-unit>
+    <trans-unit id="41311535">
+      <source xml:lang="ru">Старт при загрузке системы</source>
+      <target xml:lang="da">Start ved systemstart</target>
+    </trans-unit>
+    <trans-unit id="41311534">
+      <source xml:lang="ru">Стоп-бит:</source>
+      <target xml:lang="da">Stop bit:</target>
+    </trans-unit>
+    <trans-unit id="41311533">
+      <source xml:lang="ru">Сцена:</source>
+      <target xml:lang="da">Scene:</target>
+    </trans-unit>
+    <trans-unit id="41311532">
+      <source xml:lang="ru">Тайм-аут:</source>
+      <target xml:lang="da">Tiden er gået:</target>
+    </trans-unit>
+    <trans-unit id="41311531">
+      <source xml:lang="ru">Тип контрола:</source>
+      <target xml:lang="da">Kontroltype:</target>
+    </trans-unit>
+    <trans-unit id="41311530">
+      <source xml:lang="ru">Трансляция входных MIDI-команд в команды мультимедиа клавиатуры. Управление воспроизведением сторонних мультимедиа программ.</source>
+      <target xml:lang="da">Oversættelse af MIDI-inputkommandoer til multimedietastaturkommandoer. Styr afspilning af tredjeparts multimedieprogrammer.</target>
+    </trans-unit>
+    <trans-unit id="41311529">
+      <source xml:lang="ru">Тёмная</source>
+      <target xml:lang="da">Mørk</target>
+    </trans-unit>
+    <trans-unit id="41311528">
+      <source xml:lang="ru">Умный Дом</source>
+      <target xml:lang="da">Smart hus</target>
+    </trans-unit>
+    <trans-unit id="41311527">
+      <source xml:lang="ru">Устанавливать сохранённые уровни громкости при старте</source>
+      <target xml:lang="da">Indstil gemte lydstyrkeniveauer ved opstart</target>
+    </trans-unit>
+    <trans-unit id="41311526">
+      <source xml:lang="ru">Цвет рамки</source>
+      <target xml:lang="da">Ramme farve</target>
+    </trans-unit>
+    <trans-unit id="41311525">
+      <source xml:lang="ru">Цвет текста</source>
+      <target xml:lang="da">Tekstfarve</target>
+    </trans-unit>
+    <trans-unit id="41311524">
+      <source xml:lang="ru">Цвет фона</source>
+      <target xml:lang="da">Baggrundsfarve</target>
+    </trans-unit>
+    <trans-unit id="41311523">
+      <source xml:lang="ru">Цвета вашей темы</source>
+      <target xml:lang="da">Dine temafarver</target>
+    </trans-unit>
+    <trans-unit id="41311522">
+      <source xml:lang="ru">ключ PSK:</source>
+      <target xml:lang="da">PSK nøgle:</target>
+    </trans-unit>
+    <trans-unit id="41311521">
+      <source xml:lang="ru">количество портов</source>
+      <target xml:lang="da">antal havne</target>
+    </trans-unit>
+    <trans-unit id="41311520">
+      <source xml:lang="ru">логин:</source>
+      <target xml:lang="da">Log på:</target>
+    </trans-unit>
+    <trans-unit id="41311519">
+      <source xml:lang="ru">пароль:</source>
+      <target xml:lang="da">adgangskode:</target>
+    </trans-unit>
+    <trans-unit id="41311518">
+      <source xml:lang="ru">порт:</source>
+      <target xml:lang="da">Havn:</target>
+    </trans-unit>
+    <trans-unit id="41311517">
+      <source xml:lang="ru">самоподписанный</source>
+      <target xml:lang="da">selvunderskrevet</target>
+    </trans-unit>
+    <trans-unit id="41311516">
+      <source xml:lang="ru">уровень логирования MQTT сессий:</source>
+      <target xml:lang="da">MQTT session logning niveau:</target>
+    </trans-unit>
+   </body>
+  </file>
+</xliff>

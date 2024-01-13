@@ -4,6 +4,16 @@
 
 # Management RC/PO/POT/XLIFF languages files - Translate Toolkit
 
+- [rc2pot](#rc2pot.exe)  Conversion RC to PO/POT files  
+- [po2rc](#po2rc.exe)  Conversion PO/POT to RC files  
+- [xlf2rc](#xlf2rc)  Conversion XLIFF to RC files
+- [xlf2po](#xlf2po.exe)  Conversion XLIFF to PO/POT files  
+- [lang2id](#lang2id.exe)  Conversion NLS string to Microsoft constant Languages ID
+- [id2lang](#id2lang.exe)  Conversion NLS string to Microsoft Language and Sub Language ID  
+- [po2diff](#po2diff.exe)  Different PO/POT files  
+- [diff2xlf](#diff2xlf.exe)  Different XLIFF source file to append XLIFF destination file  
+- [po2spell](#po2spell.exe)  Spelling Checker PO/POT files  
+
 ### Project philosophy
 
 The reason why these utilities were written is simple; I could not find working analogues.  
@@ -167,6 +177,36 @@ Options:
 	lang2id.exe DE
 	lang2id.exe de-DE
 	lang2id.exe de_DE  
+
+```
+
+#### po2diff.exe:  
+```
+Different PO/POT files  
+
+Usage: po2diff.exe [options...]
+Options:
+    -o, --oldpo            Old PO input file, full path (Required)
+    -n, --newpo            New PO input file, full path (Required)
+    -p, --outpo            Different PO output file, full path (Required)
+    -h, --help             this help page..       
+
+	po2diff.exe -o x:\path\to\file\old.po -n x:\path\to\file\new.po -p x:\path\output\directory\out.po
+
+```
+
+#### diff2xlf.exe:  
+```
+Different XLIFF source file to append XLIFF destination file
+
+Usage: diff2xlf.exe [options...]
+Options:
+    -s, --src              XLIFF source input file, full path (Required)
+    -d, --dst              XLIFF destination input file, full path (Required)
+    -o, --output           XLIFF output file, full path (Required)
+    -h, --help             this help page..       
+
+	diff2xlf.exe -s x:\path\to\file\src.xlf -d x:\path\to\file\dst.xlf -o x:\path\to\file\output.xlf
 
 ```
 

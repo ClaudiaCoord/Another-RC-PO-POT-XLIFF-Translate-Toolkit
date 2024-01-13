@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2">
+  <file original="Translate/translate/MIDIMT_FORMxDA.po" source-language="ru" target-language="da">
+   <body>
+    <trans-unit id="41311518">
+      <source xml:lang="ru">шорт нах1:</source>
+      <target xml:lang="da">Havn:</target>
+    </trans-unit>
+    <trans-unit id="41311517">
+      <source xml:lang="ru">шорт нах2</source>
+      <target xml:lang="da">selvunderskrevet</target>
+    </trans-unit>
+    <trans-unit id="41311516">
+      <source xml:lang="ru">шорт нах3</source>
+      <target xml:lang="da">MQTT session logning niveau:</target>
+    </trans-unit>
+   </body>
+  </file>
+</xliff>
